@@ -3,12 +3,12 @@
 ## General information
 
 VSCode stores its configuration in JSON files. They can either affect all files
-edited by a user, or only all files in the currently opened directory.
-Per user configuration files are stored in `~/.config/VSCodium/User/`
-directory, while per directory files are stored in the `.vscode` subdirectory
-of the project's directory. I prefer to use the per-directory approach which is
-useful if you have checkouts/projects of the same kind in a single directory on
-the file system.
+edited by a user, or only all files in the currently opened directory. Per user
+configuration files are stored in `~/.config/VSCodium/User/` directory, while
+per directory files are stored in the `.vscode` subdirectory of the project's
+directory. I prefer to use the per-directory approach which is useful if you
+have checkouts/projects of the same kind in a single directory on the file
+system.
 
 You can find my collection of configuration files for VSCode at
 https://github.com/tbazant/vscode - feel free to add you suggestions via GitHub
@@ -139,9 +139,10 @@ See https://github.com/tbazant/vscode for my collection of DocBook snippets.
 
 ## daps integration
 
-VSCode can run build tasks that can run commands on the active file. To run
-shell commands, install the 'Task Shell Input' extension. Tasks are stored in
-the `.vscode/tasks.json` file.
+VSCode can run build tasks that can run commands on the active file. Build tasks
+are triggered with the `ctrl+shift+b` shortcut. To run shell commands, install
+the 'Task Shell Input' extension. Tasks are stored in the `.vscode/tasks.json`
+file.
 
 The following task example formats the open XML file with the `daps-xmlformat`
 command:
@@ -161,6 +162,19 @@ command:
     "panel": "shared",
 },
 ```
+
+To assign a shortcut to this particular task, create a `keybindings.json` file
+in your per-user configuration directory `~/.config/VSCodium/User/` and add the
+following content:
+```json
+[
+    {
+        "key": "ctrl+shift+i",
+        "command": "workbench.action.tasks.runTask",
+        "args": "Daps: XML format",
+        "when": "editorLangId == xml"
+    },
+]
 
 See https://github.com/tbazant/vscode for my collection of daps tasks.
 
