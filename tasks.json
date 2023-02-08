@@ -1,0 +1,85 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Daps: XML format",
+            "type": "shell",
+            "command": "daps-xmlformat",
+            "args": [
+                "-i",
+                "${file}"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "silent",
+                "panel": "shared",
+            },
+        },
+        {
+            "label": "Daps: validate",
+            "type": "shell",
+            "command": "daps -d ${input:dc-file} validate",
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "panel": "shared",
+            },
+            "options": {
+                "cwd": "${fileDirname}/../",
+            },
+        },
+        {
+            "label": "Daps: build DC-file",
+            "type": "shell",
+            "command": "daps -d ${input:dc-file} ${input:target}",
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "panel": "shared",
+            },
+            "options": {
+                "cwd": "${fileDirname}/../",
+            },
+        },
+        {
+            "label": "Daps: build root ID",
+            "type": "shell",
+            "command": "daps -d ${input:dc-file} ${input:target} --rootid=${selectedText}",
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "panel": "shared",
+            },
+            "options": {
+                "cwd": "${fileDirname}/../",
+            },
+        }
+    ],
+    "inputs": [
+        {
+            "id": "dc-file",
+            "type": "command",
+            "command": "shellCommand.execute",
+            "args": {
+                "description": "Select DC file",
+                "command": "ls -1 | grep 'DC-'",
+                "cwd": "${fileDirName}/../"
+            }
+        },
+        {
+            "id": "target",
+            "type": "pickString",
+            "description": "Select build target",
+            "options": [
+                "pdf",
+                "html",
+            ]
+        },
+    ]
+}

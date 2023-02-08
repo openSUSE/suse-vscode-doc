@@ -1,0 +1,303 @@
+{
+	"Paragraph": {
+		"scope": "xml",
+		"prefix": "pa",
+		"body": [
+			"<para>",
+			"\t${1:insert text}",
+			"</para>"
+		]
+	},
+	"List item": {
+		"scope": "xml",
+		"prefix": "li",
+		"body": [
+			"<listitem>",
+			"\t${1:insert text}",
+			"</listitem>"
+		]
+	},
+	"List item with a paragraph": {
+		"scope": "xml",
+		"prefix": "lip",
+		"body": [
+			"<listitem>",
+			"\t<para>",
+			"\t\t${1:insert text}",
+			"\t</para>",
+			"</listitem>"
+		]
+	},
+	"Title": {
+		"scope": "xml",
+		"prefix": "tt",
+		"body": "<title>${1:insert title}</title>"
+	},
+	"Itemized list": {
+		"prefix": "il",
+		"body": [
+			"<itemizedlist>",
+			"\t<listitem>",
+			"\t\t<para>",
+			"\t\t\t${1:insert text}",
+			"\t\t</para>",
+			"\t</listitem>",
+			"\t<listitem>",
+			"\t\t<para>",
+			"\t\t\t${2:insert text}",
+			"\t\t</para>",
+			"\t</listitem>",
+			"</itemizedlist>"
+		]
+	},
+	"Section": {
+		"scope": "xml",
+		"prefix": "s",
+		"body": [
+			"<sect${1|1,2,3,4,ion|} xml:id=\"${2:insert ID}\">",
+			"\t<title>${3:insert title}</title>",
+			"\t<para>",
+			"\t\t${4:insert text}",
+			"\t</para>",
+			"</sect${1|1,2,3,4,ion|}>"
+		]
+	},
+	"Variable list entry": {
+		"scope": "xml",
+		"prefix": "ve",
+		"body": [
+			"<varlistentry>",
+			"\t\t<term>${1:insert term}</term>",
+			"\t\t<listitem>",
+			"\t\t\t<para>",
+			"\t\t\t\t${2:insert text}",
+			"\t\t\t</para>",
+			"\t\t</listitem>",
+			"</varlistentry>"
+		]
+	},
+	"Variable list": {
+		"scope": "xml",
+		"prefix": "vl",
+		"body": [
+			"<variablelist>",
+			"\t<varlistentry>",
+			"\t\t\t<term>${1:insert term}</term>",
+			"\t\t\t<listitem>",
+			"\t\t\t\t<para>",
+			"\t\t\t\t\t${2:insert text}",
+			"\t\t\t\t</para>",
+			"\t\t\t</listitem>",
+			"\t</varlistentry>",
+			"\t<varlistentry>",
+			"\t\t\t<term>${3:insert term}</term>",
+			"\t\t\t<listitem>",
+			"\t\t\t\t<para>",
+			"\t\t\t\t\t${4:insert text}",
+			"\t\t\t\t</para>",
+			"\t\t\t</listitem>",
+			"\t</varlistentry>",
+			"</variablelist>"
+		]
+	},
+	"Command": {
+		"scope": "xml",
+		"prefix": "cm",
+		"body": "<command>${1:insert command}</command>"
+	},
+	"Emphasize": {
+		"scope": "xml",
+		"prefix": "em",
+		"body": "<emphasis>${1:insert text}</emphasis>"
+	},
+	"Emphasize with bold": {
+		"scope": "xml",
+		"prefix": "emb",
+		"body": "<emphasis role=\"bold\">${1:insert text}</emphasis>"
+	},
+	"Figure": {
+		"scope": "xml",
+		"prefix": "fg",
+		"body": [
+			"<figure>",
+			"\t<title>${1:insert title}</title>",
+			"\t<mediaobject>",
+			"\t\t<imageobject role=\"fo\">",
+			"\t\t\t<imagedata fileref=\"${2:insert filename}\" width=\"${3:insert width}\"/>",
+			"\t\t</imageobject>",
+			"\t\t<imageobject role=\"html\">",
+			"\t\t\t<imagedata fileref=\"${2:insert filename}\" width=\"${3:insert width}\"/>",
+			"\t\t</imageobject>",
+			"\t\t<textobject role=\"description\">",
+			"\t\t\t<phrase>${1:insert title}</phrase>",
+			"\t\t</textobject>",
+			"\t</mediaobject>",
+			"</figure>"
+		]
+	},
+	"File name": {
+		"scope": "xml",
+		"prefix": "fn",
+		"body": "<filename>${1:insert file name}</filename>"
+	},
+	"GUI menu item": {
+		"scope": "xml",
+		"prefix": "gm",
+		"body": "<guimenu>${1:insert menu item}</guimenu>"
+	},
+	"Important": {
+		"scope": "xml",
+		"prefix": "im",
+		"body": [
+			"<important>",
+			"\t<para>",
+			"\t\t${1:insert text}",
+			"\t</para>",
+			"</important>"
+		]
+	},
+	"Literal text": {
+		"scope": "xml",
+		"prefix": "ll",
+		"body": "<literal>${1:insert text}</literal>"
+	},
+	"Link": {
+		"scope": "xml",
+		"prefix": "ln",
+		"body": "<link xlink:href=\"${1:insert URL}\"/>"
+	},
+	"Menu choice": {
+		"scope": "xml",
+		"prefix": "mn",
+		"body": "<menuchoice><guimenu>${1:insert menu item}</guimenu><guimenu>${2:insert menu item}</guimenu></menuchoice>"
+	},
+	"Note": {
+		"scope": "xml",
+		"prefix": "nt",
+		"body": [
+			"<note>",
+			"\t<para>",
+			"\t\t${1:insert text}",
+			"\t</para>",
+			"</note>"
+		]
+	},
+	"Ordered list": {
+		"scope": "xml",
+		"prefix": "ol",
+		"body": [
+			"<orderedlist>",
+			"\t<listitem>",
+			"\t\t<para>",
+			"\t\t\t${1:insert text}",
+			"\t\t</para>",
+			"\t</listitem>",
+			"\t<listitem>",
+			"\t\t<para>",
+			"\t\t\t${2:insert text}",
+			"\t\t</para>",
+			"\t</listitem>",
+			"</orderedlist>"
+		]
+	},
+	"Option": {
+		"scope": "xml",
+		"prefix": "op",
+		"body": "<option>${1:insert text}</option>"
+	},
+	"Package": {
+		"scope": "xml",
+		"prefix": "pk",
+		"body": "<package>${1:insert text}</package>"
+	},
+	"Replaceable": {
+		"scope": "xml",
+		"prefix": "rp",
+		"body": "<replaceable>${1:insert text}</replaceable>"
+	},
+	"Step": {
+		"scope": "xml",
+		"prefix": "st",
+		"body": [
+			"<step>",
+			"\t<para>",
+			"\t\t${1:insert text}",
+			"\t/<para>",
+			"</step>"
+		]
+	},
+	"Procedure": {
+		"scope": "xml",
+		"prefix": "pr",
+		"body": [
+			"<procedure>",
+			"\t<step>",
+			"\t\t<para>",
+			"\t\t\t${1:insert text}",
+			"\t\t</para>",
+			"\t</step>",
+			"\t<step>",
+			"\t\t<para>",
+			"\t\t\t${2:insert text}",
+			"\t\t</para>",
+			"\t</step>",
+			"<procedure>",
+		]
+	},
+	"Screen output": {
+		"scope": "xml",
+		"prefix": "sc",
+		"body": [
+			"<screen>&prompt.${1|user,root,sudo|};<command>${2:insert command}</command>",
+			"${3:insert output}</screen>"
+		]
+	},
+	"System item": {
+		"scope": "xml",
+		"prefix": "si",
+		"body": [
+			"<systemitem>${1:insert item}</systemitem>"
+		]
+	},
+	"System item of a type": {
+		"scope": "xml",
+		"prefix": "sit",
+		"body": [
+			"<systemitem class=\"${1|daemon,resource,username|}\">${2:insert item}</systemitem>"
+		]
+	},
+	"Tip": {
+		"scope": "xml",
+		"prefix": "tp",
+		"body": [
+			"<tip>",
+			"\t<para>",
+			"\t\t${1:insert text}",
+			"\t</para>",
+			"</tip>"
+		]
+	},
+	"Warning": {
+		"scope": "xml",
+		"prefix": "wn",
+		"body": [
+			"<warning>",
+			"\t<para>",
+			"\t\t${1:insert text}",
+			"\t</para>",
+			"</warning>"
+		]
+	},
+	"Variable name": {
+		"scope": "xml",
+		"prefix": "va",
+		"body": [
+			"<varnamr>${1:insert variable}</varname>"
+		]
+	},
+	"X-reference": {
+		"scope": "xml",
+		"prefix": "xr",
+		"body": "<xref linkend=\"${1:insert URL}\"/>"
+	},
+}
