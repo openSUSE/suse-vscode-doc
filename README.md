@@ -175,6 +175,7 @@ following content:
         "when": "editorLangId == xml"
     },
 ]
+```
 
 See https://github.com/tbazant/vscode for my collection of daps tasks.
 
