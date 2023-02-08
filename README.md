@@ -1,6 +1,6 @@
 # Editing DocBook in VSCode
 
-## general information
+## General information
 
 VSCode stores its configuration in JSON files. They can either affect all files
 edited by a user, or only all files in the currently opened directory.
