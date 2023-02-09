@@ -1,0 +1,57 @@
+{
+    "editor.rulers": [
+        80
+    ],
+    "editor.tabSize": 1,
+    "rewrap.autoWrap.enabled": true,
+    "xml.server.vmargs": "-Xmx128M",
+    "xml.fileAssociations": [
+        {
+            "pattern": "**/*.xml",
+            "systemId": "file:///usr/share/xml/geekodoc/rng/2_5.2/geekodoc-v2-flat.rng"
+        }
+    ],
+    "xml.format.enabled": false,
+    "xml.validation.resolveExternalEntities": true,
+    "xml.validation.xInclude.enabled": false,
+    "xml.references": [
+        {
+            "pattern": "**/*.xml",
+            "expressions": [
+                {
+                    "from": "xref/@linkend",
+                    "to": "@xml:id"
+                },
+            ]
+        }
+    ],
+    "xml.codeLens.enabled": true,
+    "cSpell.caseSensitive": true,
+    "cSpell.enableFiletypes": [
+        "xml"
+    ],
+    "cSpell.minWordLength": 3,
+    "cSpell.flagWords": [
+        "filesystem"
+    ],
+    "cSpell.customDictionaries": {
+        "SUSE custom": {
+            "name": "SUSE custom dictionary",
+            "path": "/usr/share/hunspell/en_US-suse-doc.dic",
+            "addWords": false,
+        },
+        "SUSE adWords": {
+            "name": "SUSE adWords dictionary",
+            "path": "~/SUSE-adWords-dict.dic",
+            "addWords": true,
+        }
+    },
+    "cSpell.showAutocompleteSuggestions": true,
+    "cSpell.ignoreRegExpList": [
+        "/<(\n|.)*?>/g",
+        "/<\/.*?>/g",
+        "/&.*;/g",
+        "/<screen.*?>(\n|.)*?<\/screen>/g",
+        "/<command.*?>(\n|.)*?<\/command>/g",
+    ],
+}

@@ -177,6 +177,13 @@ following content:
 ]
 ```
 
+TIP: Because the XML extension already defines `ctrl+shift+i`, disable XML
+formatting in `.vscode/tasks.json`:
+
+```json
+"xml.format.enabled": false,
+```
+
 See https://github.com/tbazant/vscode for my collection of daps tasks.
 
 ## Style checker
