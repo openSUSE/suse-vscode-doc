@@ -244,9 +244,16 @@
 			"<procedure>",
 		]
 	},
-	"Screen output": {
+	"Screen": {
 		"scope": "xml",
 		"prefix": "sc",
+		"body": [
+			"<screen>${1:insert output}</screen>"
+		]
+	},
+	"Screen with a command": {
+		"scope": "xml",
+		"prefix": "scc",
 		"body": [
 			"<screen>&prompt.${1|user,root,sudo|};<command>${2:insert command}</command>",
 			"${3:insert output}</screen>"

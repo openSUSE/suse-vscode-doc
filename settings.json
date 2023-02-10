@@ -4,7 +4,7 @@
     ],
     "editor.tabSize": 1,
     "rewrap.autoWrap.enabled": true,
-    "xml.server.vmargs": "-Xmx128M",
+    "xml.foldings.includeClosingTagInFold": true,
     "xml.fileAssociations": [
         {
             "pattern": "**/*.xml",
@@ -13,7 +13,7 @@
     ],
     "xml.format.enabled": false,
     "xml.validation.resolveExternalEntities": true,
-    "xml.validation.xInclude.enabled": false,
+    "xml.validation.xInclude.enabled": true,
     "xml.references": [
         {
             "pattern": "**/*.xml",
@@ -51,6 +51,6 @@
         "/<(\n|.)*?>/g",
         "/<\/.*?>/g",
         "/&.*;/g",
-        "/<(screen|command).*?>(\n|.)*?</(\\1)>/g",
+        "/<(screen|command|package|option).*?>(\n|.)*?</(\\1)>/g",
     ],
 }
