@@ -222,7 +222,7 @@
 			"<step>",
 			"\t<para>",
 			"\t\t${1:insert text}",
-			"\t/<para>",
+			"\t</para>",
 			"</step>"
 		]
 	},
