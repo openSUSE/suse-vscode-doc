@@ -2,11 +2,16 @@
 
 ## General information
 
-VSCode stores its configuration in JSON files. They can either affect all files
-edited by a user, or only all files in the currently opened directory. Per user
-configuration files are stored in `~/.config/VSCodium/User/` directory, while
-per directory files are stored in the `.vscode` subdirectory of the project's
-directory. I prefer to use the per-directory approach which is useful if you
+VSCode stores its configuration in JSON files. You can store the configuration either in your user directory or in your workspace, the current project you work.
+
+User configuration files are stored in one of the following directories:
+
+* `~/.config/Code/User/` (VSCode)
+* `~/.config/VSCodium/User/` (VSCodium)
+
+Inside your workspace (the project directory), configuration can be stored in a `.vscode` subdirectory.
+
+I prefer to use the per-directory approach which is useful if you
 have checkouts/projects of the same kind in a single directory on the file
 system.
 
@@ -168,8 +173,7 @@ command:
 ```
 
 To assign a shortcut to this particular task, create a `keybindings.json` file
-in your per-user configuration directory `~/.config/VSCodium/User/` and add the
-following content:
+in your user configuration directory add the following content:
 
 ```json
 [
