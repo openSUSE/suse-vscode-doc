@@ -11,18 +11,18 @@ have checkouts/projects of the same kind in a single directory on the file
 system.
 
 You can find my collection of configuration files for VSCode at
-https://github.com/tbazant/vscode - feel free to add you suggestions via GitHub
+https://github.com/openSUSE/suse-vscode-doc -- feel free to add you suggestions via GitHub
 Pull Requests or Issues.
 
 
 ## XML support
 
-Install the XML extension by RedHat.
+Install the XML extension by RedHat. The exention ID is [`redhat.vscode-xml`](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-xml).
 
-### Support for geekodoc's RELAX NG schema
+### Support for GeekoDoc's RELAX NG schema
 
-To let VSCode be aware of geekodoc, you need to associate XML files with the
-geekodoc schema. Add the following to `.vscode/settings.json`:
+To let VSCode be aware of GeekoDoc, you need to associate XML files with the
+GeekoDoc schema. Add the following to `.vscode/settings.json`:
 
 ```json
 "xml.fileAssociations": [
@@ -37,6 +37,7 @@ geekodoc schema. Add the following to `.vscode/settings.json`:
 
 To autocomplete XML IDs from the current file in `<xref linkend="">` references,
 add the following to `.vscode/settings.json`:
+
 ```json
 "xml.references": [
     {
@@ -50,7 +51,8 @@ add the following to `.vscode/settings.json`:
     }
 ],
 ```
-Use `ctrl+space` to view the suggestions.
+
+Use `Ctrl+space` to view the suggestions.
 
 ## Spell checker
 
@@ -59,6 +61,7 @@ Install the Code Spell Checker extension
 ### Basic settings
 
 Following are useful settings. Consider adding them to `.vscode/settings.json`:
+
 ```json
 "cSpell.caseSensitive": true,
 "cSpell.enableFiletypes": [
@@ -121,6 +124,7 @@ Add the list to  `.vscode/settings.json`:
 
 Snippets are templates of complete DocBook structures. You can insert them into
 a document by typing defined prefixes. This is an example of a `<para>` snippet:
+
 ```json
 "Paragraph": {
     "scope": "xml",
@@ -135,7 +139,7 @@ a document by typing defined prefixes. This is an example of a `<para>` snippet:
 
 Insert custom snippets into the `.vscode/docbook.code-snippets` file.
 
-See https://github.com/tbazant/vscode for my collection of DocBook snippets.
+See https://github.com/openSUSE/suse-vscode-doc for my collection of DocBook snippets.
 
 ## daps integration
 
@@ -166,6 +170,7 @@ command:
 To assign a shortcut to this particular task, create a `keybindings.json` file
 in your per-user configuration directory `~/.config/VSCodium/User/` and add the
 following content:
+
 ```json
 [
     {
@@ -184,11 +189,11 @@ formatting in `.vscode/tasks.json`:
 "xml.format.enabled": false,
 ```
 
-See https://github.com/tbazant/vscode for my collection of daps tasks.
+See https://github.com/openSUSE/suse-vscode-doc for my collection of daps tasks.
 
 ## Style checker
 
 Dmitri Popov developed style files for the Vale style checker in an open DocBook
 file. He has written a comprehensive HOWTO on installing `vale` and 'Vale'
 extension to make things working. Refer to his page
-https://github.com/dmpop/technically for detailed information.
+https://github.com/openSUSE/suse-vale-styleguide for detailed information.
