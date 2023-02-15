@@ -28,7 +28,7 @@ GeekoDoc schema. Add the following to `.vscode/settings.json`:
 "xml.fileAssociations": [
     {
         "pattern": "**/*.xml",
-        "systemId": "file:///usr/share/xml/geekodoc/rng/2_5.2/geekodoc-v2-flat.rng"
+        "systemId": "file:///usr/share/xml/geekodoc/rng/geekodoc-latest-flat.rng"
     }
 ],
 ```
