@@ -299,7 +299,7 @@
 		"scope": "xml",
 		"prefix": "va",
 		"body": [
-			"<varnamr>${1:insert variable}</varname>"
+			"<varname>${1:insert variable}</varname>"
 		]
 	},
 	"X-reference": {
