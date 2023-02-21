@@ -9,6 +9,7 @@
   "categories": [
     "Snippets"
   ],
+  "icon": "./docbook-logo.png",
   "contributes": {
     "snippets": [
       {
