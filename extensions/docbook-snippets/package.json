@@ -3,6 +3,7 @@
   "displayName": "DocBook Snippets",
   "description": "A set of common snippets that include simple and complex DocBook structures.",
   "version": "0.0.1",
+  "repository": "https://github.com/openSUSE/suse-vscode-doc/extensions/docbook-snippets",
   "engines": {
     "vscode": "^1.75.0"
   },
