@@ -10,7 +10,7 @@
   "categories": [
     "Snippets"
   ],
-  "icon": "./docbook-logo.png",
+  "icon": "./media/docbook-logo.png",
   "contributes": {
     "snippets": [
       {
