@@ -1,0 +1,20 @@
+{
+  "name": "docbook-snippets",
+  "displayName": "DocBook Snippets",
+  "description": "A set of common snippets that include simple and complex DocBook structures.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "xml",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}

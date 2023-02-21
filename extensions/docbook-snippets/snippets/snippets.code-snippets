@@ -1,0 +1,385 @@
+{
+    "Paragraph": {
+        "prefix": "pa",
+        "body": [
+            "<para>",
+            "\t${1:insert text}",
+            "</para>"
+        ]
+    },
+    "List item": {
+        "prefix": "li",
+        "body": [
+            "<listitem>",
+            "\t${1:insert text}",
+            "</listitem>"
+        ]
+    },
+    "List item with a paragraph": {
+        "prefix": "lip",
+        "body": [
+            "<listitem>",
+            "\t<para>",
+            "\t\t${1:insert text}",
+            "\t</para>",
+            "</listitem>"
+        ]
+    },
+    "Title": {
+        "prefix": "tt",
+        "body": "<title>${1:insert title}</title>"
+    },
+    "Itemized list": {
+        "prefix": "il",
+        "body": [
+            "<itemizedlist>",
+            "\t<listitem>",
+            "\t\t<para>",
+            "\t\t\t${1:insert text}",
+            "\t\t</para>",
+            "\t</listitem>",
+            "\t<listitem>",
+            "\t\t<para>",
+            "\t\t\t${2:insert text}",
+            "\t\t</para>",
+            "\t</listitem>",
+            "</itemizedlist>"
+        ]
+    },
+    "Section": {
+        "prefix": "s",
+        "body": [
+            "<sect${1|1,2,3,4,ion|} xml:id=\"${2:insert ID}\">",
+            "\t<title>${3:insert title}</title>",
+            "\t<para>",
+            "\t\t${4:insert text}",
+            "\t</para>",
+            "</sect${1|1,2,3,4,ion|}>"
+        ]
+    },
+    "Variable list entry": {
+        "prefix": "ve",
+        "body": [
+            "<varlistentry>",
+            "\t\t<term>${1:insert term}</term>",
+            "\t\t<listitem>",
+            "\t\t\t<para>",
+            "\t\t\t\t${2:insert text}",
+            "\t\t\t</para>",
+            "\t\t</listitem>",
+            "</varlistentry>"
+        ]
+    },
+    "Variable list": {
+        "prefix": "vl",
+        "body": [
+            "<variablelist>",
+            "\t<varlistentry>",
+            "\t\t\t<term>${1:insert term}</term>",
+            "\t\t\t<listitem>",
+            "\t\t\t\t<para>",
+            "\t\t\t\t\t${2:insert text}",
+            "\t\t\t\t</para>",
+            "\t\t\t</listitem>",
+            "\t</varlistentry>",
+            "\t<varlistentry>",
+            "\t\t\t<term>${3:insert term}</term>",
+            "\t\t\t<listitem>",
+            "\t\t\t\t<para>",
+            "\t\t\t\t\t${4:insert text}",
+            "\t\t\t\t</para>",
+            "\t\t\t</listitem>",
+            "\t</varlistentry>",
+            "</variablelist>"
+        ]
+    },
+    "Command": {
+        "prefix": "cm",
+        "body": "<command>${1:insert command}</command>"
+    },
+    "Emphasize": {
+        "prefix": "em",
+        "body": "<emphasis>${1:insert text}</emphasis>"
+    },
+    "Emphasize with bold": {
+        "prefix": "emb",
+        "body": "<emphasis role=\"bold\">${1:insert text}</emphasis>"
+    },
+    "Figure": {
+        "prefix": "fg",
+        "body": [
+            "<figure>",
+            "\t<title>${1:insert title}</title>",
+            "\t<mediaobject>",
+            "\t\t<imageobject role=\"fo\">",
+            "\t\t\t<imagedata fileref=\"${2:insert filename}\" width=\"${3:insert width}\"/>",
+            "\t\t</imageobject>",
+            "\t\t<imageobject role=\"html\">",
+            "\t\t\t<imagedata fileref=\"${2:insert filename}\" width=\"${3:insert width}\"/>",
+            "\t\t</imageobject>",
+            "\t\t<textobject role=\"description\">",
+            "\t\t\t<phrase>${1:insert title}</phrase>",
+            "\t\t</textobject>",
+            "\t</mediaobject>",
+            "</figure>"
+        ]
+    },
+    "File name": {
+        "prefix": "fn",
+        "body": "<filename>${1:insert file name}</filename>"
+    },
+    "GUI menu item": {
+        "prefix": "gm",
+        "body": "<guimenu>${1:insert menu item}</guimenu>"
+    },
+    "Important": {
+        "prefix": "im",
+        "body": [
+            "<important>",
+            "\t<para>",
+            "\t\t${1:insert text}",
+            "\t</para>",
+            "</important>"
+        ]
+    },
+    "Literal text": {
+        "prefix": "ll",
+        "body": "<literal>${1:insert text}</literal>"
+    },
+    "Link": {
+        "prefix": "ln",
+        "body": "<link xlink:href=\"${1:insert URL}\"/>"
+    },
+    "Menu choice": {
+        "prefix": "mn",
+        "body": "<menuchoice><guimenu>${1:insert menu item}</guimenu><guimenu>${2:insert menu item}</guimenu></menuchoice>"
+    },
+    "Note": {
+        "prefix": "nt",
+        "body": [
+            "<note>",
+            "\t<para>",
+            "\t\t${1:insert text}",
+            "\t</para>",
+            "</note>"
+        ]
+    },
+    "Ordered list": {
+        "prefix": "ol",
+        "body": [
+            "<orderedlist>",
+            "\t<listitem>",
+            "\t\t<para>",
+            "\t\t\t${1:insert text}",
+            "\t\t</para>",
+            "\t</listitem>",
+            "\t<listitem>",
+            "\t\t<para>",
+            "\t\t\t${2:insert text}",
+            "\t\t</para>",
+            "\t</listitem>",
+            "</orderedlist>"
+        ]
+    },
+    "Option": {
+        "prefix": "op",
+        "body": "<option>${1:insert text}</option>"
+    },
+    "Package": {
+        "prefix": "pk",
+        "body": "<package>${1:insert text}</package>"
+    },
+    "Replaceable": {
+        "prefix": "rp",
+        "body": "<replaceable>${1:insert text}</replaceable>"
+    },
+    "Step": {
+        "prefix": "st",
+        "body": [
+            "<step>",
+            "\t<para>",
+            "\t\t${1:insert text}",
+            "\t</para>",
+            "</step>"
+        ]
+    },
+    "Procedure": {
+        "prefix": "pr",
+        "body": [
+            "<procedure>",
+            "\t<step>",
+            "\t\t<para>",
+            "\t\t\t${1:insert text}",
+            "\t\t</para>",
+            "\t</step>",
+            "\t<step>",
+            "\t\t<para>",
+            "\t\t\t${2:insert text}",
+            "\t\t</para>",
+            "\t</step>",
+            "<procedure>",
+        ]
+    },
+    "Screen": {
+        "prefix": "sc",
+        "body": [
+            "<screen>${1:insert output}</screen>"
+        ]
+    },
+    "Screen with a command": {
+        "prefix": "scc",
+        "body": [
+            "<screen>&prompt.${1|user,root,sudo|};<command>${2:insert command}</command>",
+            "${3:insert output}</screen>"
+        ]
+    },
+    "System item": {
+        "prefix": "si",
+        "body": [
+            "<systemitem>${1:insert item}</systemitem>"
+        ]
+    },
+    "System item of a type": {
+        "prefix": "sit",
+        "body": [
+            "<systemitem class=\"${1|daemon,resource,username|}\">${2:insert item}</systemitem>"
+        ]
+    },
+    "Tip": {
+        "prefix": "tp",
+        "body": [
+            "<tip>",
+            "\t<para>",
+            "\t\t${1:insert text}",
+            "\t</para>",
+            "</tip>"
+        ]
+    },
+    "Warning": {
+        "prefix": "wn",
+        "body": [
+            "<warning>",
+            "\t<para>",
+            "\t\t${1:insert text}",
+            "\t</para>",
+            "</warning>"
+        ]
+    },
+    "Variable name": {
+        "prefix": "va",
+        "body": [
+            "<varname>${1:insert variable}</varname>"
+        ]
+    },
+    "X-reference": {
+        "prefix": "xr",
+        "body": "<xref linkend=\"${1:insert URL}\"/>"
+    },
+    "Table entry": {
+        "prefix": "te",
+        "body": [
+            "<entry>",
+            "\t${1:insert content}",
+            "</entry>"
+        ]
+    },
+    "Table entry with a paragraph": {
+        "prefix": "tep",
+        "body": [
+            "<entry>",
+            "\t<para>",
+            "\t\t${1:insert content}",
+            "\t</para>",
+            "</entry>"
+        ]
+    },
+    "Table row": {
+        "prefix": "tr",
+        "body": [
+            "<row>",
+            "\t<entry>",
+            "\t\t<para>",
+            "\t\t\t${1:insert content}",
+            "\t\t</para>",
+            "\t</entry>",
+            "</row>"
+        ]
+    },
+    "Table heading": {
+        "prefix": "th",
+        "body": [
+            "<thead>",
+            "\t<row>",
+            "\t\t<entry>",
+            "\t\t\t<para>",
+            "\t\t\t\t${1:insert content}",
+            "\t\t\t</para>",
+            "\t\t</entry>",
+            "\t\t<entry>",
+            "\t\t\t<para>",
+            "\t\t\t\t${2:insert content}",
+            "\t\t\t</para>",
+            "\t\t</entry>",
+            "\t</row>",
+            "</thead>"
+        ]
+    },
+    "Table body": {
+        "prefix": "tb",
+        "body": [
+            "<tbody>",
+            "\t<row>",
+            "\t\t<entry>",
+            "\t\t\t<para>",
+            "\t\t\t\t${1:insert content}",
+            "\t\t\t</para>",
+            "\t\t</entry>",
+            "\t\t<entry>",
+            "\t\t\t<para>",
+            "\t\t\t\t${2:insert content}",
+            "\t\t\t</para>",
+            "\t\t</entry>",
+            "\t</row>",
+            "</tbody>"
+        ]
+    },
+    "Table": {
+        "prefix": "tbl",
+        "body": [
+            "<table>",
+            "\t<tgroup cols=\"2\">",
+            "\t\t<colspec colname=\"c1\" align=\"${1|left,center,right|}\" />",
+            "\t\t<colspec colname=\"c2\" align=\"${2|left,center,right|}\" />",
+            "\t\t<thead>",
+            "\t\t\t<row>",
+            "\t\t\t\t<entry>",
+            "\t\t\t\t\t<para>",
+            "\t\t\t\t\t\t${3:insert title}",
+            "\t\t\t\t\t</para>",
+            "\t\t\t\t</entry>",
+            "\t\t\t\t<entry>",
+            "\t\t\t\t\t<para>",
+            "\t\t\t\t\t\t${4:insert title}",
+            "\t\t\t\t\t</para>",
+            "\t\t\t\t</entry>",
+            "\t\t\t</row>",
+            "\t\t</thead>",
+            "\t\t<tbody>",
+            "\t\t\t<row>",
+            "\t\t\t\t<entry>",
+            "\t\t\t\t\t<para>",
+            "\t\t\t\t\t\t${5:insert content}",
+            "\t\t\t\t\t</para>",
+            "\t\t\t\t</entry>",
+            "\t\t\t\t<entry>",
+            "\t\t\t\t\t<para>",
+            "\t\t\t\t\t\t${6:insert content}",
+            "\t\t\t\t\t</para>",
+            "\t\t\t\t</entry>",
+            "\t\t\t</row>",
+            "\t\t</tbody>",
+            "\t</tgroup>",
+            "</table>"
+        ]
+    }
+}
