@@ -6,7 +6,7 @@ The DocBook Snippets extension includes templates of both simple and complex Doc
 You can populate the templates by pressing by the initial DocBook markup letters. For example,
 pressing `li` results in `<listitem>insert content</listitem>`. The list of templates is not complete and will be extended with future releases.
 
-![Adding <itemizedlist/>](/suse-vscode/extensions/docbook-snippets/media/itemizedlist.webm)
+![Adding <itemizedlist/>](/extensions/docbook-snippets/media/itemizedlist.webm)
 
 ## Requirements
 
