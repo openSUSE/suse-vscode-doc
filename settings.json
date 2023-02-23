@@ -51,6 +51,6 @@
         "/<(\n|.)*?>/g",
         "/<\/.*?>/g",
         "/&.*;/g",
-        "/<(screen|command|package|option).*?>(\n|.)*?</(\\1)>/g",
+        "/<(screen|command|package|option|filename|systemitem).*?>(\n|.)*?</(\\1)>/g",
     ],
 }
