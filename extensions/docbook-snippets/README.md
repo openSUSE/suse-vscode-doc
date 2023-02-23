@@ -25,6 +25,10 @@ See our issue tracker at [openSUSE/suse-vscode-doc/issues](https://github.com/op
 
 The extension was updated at the following points:
 
+### 0.1.1
+
+Added a license file.
+
 ### 0.1.0
 
 Initial release.
