@@ -217,7 +217,7 @@
             "\t\t\t${2:insert text}",
             "\t\t</para>",
             "\t</step>",
-            "<procedure>",
+            "</procedure>",
         ]
     },
     "Screen": {
