@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.2.3
+
+- Fixed path to an animation
+
 ## 0.2.2
 
 - Fixed <procedure/>
