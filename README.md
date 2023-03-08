@@ -28,7 +28,8 @@ Install the XML extension by RedHat. The exention ID is
 ### Support for GeekoDoc's RELAX NG schema
 
 To let VSCode be aware of GeekoDoc, you need to associate XML files with the
-GeekoDoc schema. Add the following to `settings.json`:
+GeekoDoc schema. Add the following to `settings.json` and save the file in your
+user directory or the project's workspace:
 
 ```json
 "xml.fileAssociations": [
