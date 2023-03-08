@@ -16,7 +16,7 @@ Settings in the current project's workspace take precedence over user settings.
 The project's workspace settings are stored in the `.vscode` subdirectory.
 
 You can find my collection of configuration files for VSCode at
-https://github.com/openSUSE/suse-vscode-doc -- feel free to add you suggestions
+https://github.com/openSUSE/suse-vscode-doc -- feel free to add your suggestions
 via GitHub Pull Requests or Issues.
 
 
