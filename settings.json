@@ -9,6 +9,10 @@
     "xml.foldings.includeClosingTagInFold": true,
     "xml.fileAssociations": [
         {
+            "pattern": "**/*.asm.xml",
+            "systemId": "file:///usr/share/xml/docbook/schema/rng/5.2/assemblyxi.rng"
+        },
+        {
             "pattern": "**/*.xml",
             "systemId": "file:///usr/share/xml/geekodoc/rng/geekodoc-latest-flat.rng"
         }
