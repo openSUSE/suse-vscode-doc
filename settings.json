@@ -1,9 +1,11 @@
 {
-    "editor.rulers": [
-        80
-    ],
-    "editor.tabSize": 1,
-    "rewrap.autoWrap.enabled": true,
+    "[xml]": {
+        "editor.rulers": [
+            80
+        ],
+        "editor.tabSize": 1,
+        "rewrap.autoWrap.enabled": true,
+    },
     "xml.foldings.includeClosingTagInFold": true,
     "xml.fileAssociations": [
         {
@@ -26,10 +28,10 @@
         }
     ],
     "xml.codeLens.enabled": true,
-    "cSpell.caseSensitive": true,
-    "cSpell.enableFiletypes": [
+    "cSpell.enabledLanguageIds": [
         "xml"
     ],
+    "cSpell.caseSensitive": true,
     "cSpell.minWordLength": 3,
     "cSpell.flagWords": [
         "filesystem"
