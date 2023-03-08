@@ -2,35 +2,41 @@
 
 ## General information
 
-VSCode stores its configuration in JSON files. You can store the configuration either in your user directory or in your workspace, the current project you work.
+VSCode stores its configuration in JSON files. Depending on the scope your
+settings apply to, you can store the configuration either in your user directory
+or in your workspace, the current project you work.
 
-User configuration files are stored in one of the following directories:
+User configuration files apply settings to all project that you open in VScode.
+They are stored in one of the following directories:
 
 * `~/.config/Code/User/` (VSCode)
 * `~/.config/VSCodium/User/` (VSCodium)
 
-Inside your workspace (the project directory), configuration can be stored in a `.vscode` subdirectory.
-
-I prefer to use the per-directory approach which is useful if you
-have checkouts/projects of the same kind in a single directory on the file
-system.
+Workspace configuration files apply settings to the current workspace
+(directory) only and have precedence over user settings. They are stored in the
+`.vscode` subdirectory of the project.
 
 You can find my collection of configuration files for VSCode at
-https://github.com/openSUSE/suse-vscode-doc -- feel free to add you suggestions via GitHub
-Pull Requests or Issues.
+https://github.com/openSUSE/suse-vscode-doc -- feel free to add you suggestions
+via GitHub Pull Requests or Issues.
 
 
 ## XML support
 
-Install the XML extension by RedHat. The exention ID is [`redhat.vscode-xml`](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-xml).
+Install the XML extension by RedHat. The exention ID is
+[`redhat.vscode-xml`](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-xml).
 
 ### Support for GeekoDoc's RELAX NG schema
 
 To let VSCode be aware of GeekoDoc, you need to associate XML files with the
-GeekoDoc schema. Add the following to `.vscode/settings.json`:
+GeekoDoc schema. Add the following to `settings.json`:
 
 ```json
 "xml.fileAssociations": [
+    {
+        "pattern": "**/*.asm.xml",
+        "systemId": "file:///usr/share/xml/docbook/schema/rng/5.2/assemblyxi.rng"
+    },
     {
         "pattern": "**/*.xml",
         "systemId": "file:///usr/share/xml/geekodoc/rng/geekodoc-latest-flat.rng"
@@ -40,8 +46,8 @@ GeekoDoc schema. Add the following to `.vscode/settings.json`:
 
 ### Resolve references inside the current file
 
-To autocomplete XML IDs from the current file in `<xref linkend="">` references,
-add the following to `.vscode/settings.json`:
+To autocomplete XML IDs from the current file in `<xref linkend=""/>` references,
+add the following to `settings.json`:
 
 ```json
 "xml.references": [
@@ -65,13 +71,10 @@ Install the Code Spell Checker extension
 
 ### Basic settings
 
-Following are useful settings. Consider adding them to `.vscode/settings.json`:
+Following are useful settings. Consider adding them to `settings.json`:
 
 ```json
 "cSpell.caseSensitive": true,
-"cSpell.enableFiletypes": [
-    "xml"
-],
 "cSpell.minWordLength": 3,
 "cSpell.showAutocompleteSuggestions": true,
 ```
@@ -79,7 +82,7 @@ Following are useful settings. Consider adding them to `.vscode/settings.json`:
 ### Custom dictionaries
 
 To include SUSE's dictionary, install the `suse-documentation-dicts-en` package
-and the following to `.vscode/settings.json`:
+and the following to `settings.json`:
 
 ```json
 "cSpell.customDictionaries": {
@@ -103,7 +106,7 @@ dictionary to collect still-unknown words.
 ### Ignoring strings
 
 To ignore specific strings such as XML markup from being spell-checked, insert
-matching regular expression to `.vscode/settings.json`:
+matching regular expression to `settings.json`:
 
 ```json
 "cSpell.ignoreRegExpList": [
@@ -142,16 +145,17 @@ a document by typing defined prefixes. This is an example of a `<para>` snippet:
 },
 ```
 
-Insert custom snippets into the `.vscode/docbook.code-snippets` file.
+Insert custom snippets into the `snippets/docbook.code-snippets` file or install
+the 'DocBook Snippets' extension from the VSCode marketplace.
 
-See https://github.com/openSUSE/suse-vscode-doc for my collection of DocBook snippets.
+See https://github.com/openSUSE/suse-vscode-doc for my collection of DocBook
+snippets.
 
 ## daps integration
 
 VSCode can run build tasks that can run commands on the active file. Build tasks
 are triggered with the `ctrl+shift+b` shortcut. To run shell commands, install
-the 'Task Shell Input' extension. Tasks are stored in the `.vscode/tasks.json`
-file.
+the 'Task Shell Input' extension. Tasks are stored in the `tasks.json` file.
 
 The following task example formats the open XML file with the `daps-xmlformat`
 command:
