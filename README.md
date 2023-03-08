@@ -12,9 +12,8 @@ They are stored in one of the following directories:
 * `~/.config/Code/User/` (VSCode)
 * `~/.config/VSCodium/User/` (VSCodium)
 
-Workspace configuration files apply settings to the current workspace
-(directory) only and have precedence over user settings. They are stored in the
-`.vscode` subdirectory of the project.
+Settings in the current project's workspace take precedence over user settings.
+The project's workspace settings are stored in the `.vscode` subdirectory.
 
 You can find my collection of configuration files for VSCode at
 https://github.com/openSUSE/suse-vscode-doc -- feel free to add you suggestions
