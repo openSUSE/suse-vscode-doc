@@ -37,11 +37,18 @@ To let VSCode be aware of GeekoDoc and DocBook assembly schema, you have two opt
             type="application/xml"
             schematypens="http://relaxng.org/ns/structure/1.0"?>
         ```
-    - for DocBook assmbly files:
+    - for DocBook assembly files:
         ```xml
         <?xml-model href="https://cdn.docbook.org/schema/5.2/rng/assemblyxi.rng"
             type="application/xml"
             schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+    - for DocBook files:
+        ```xml
+        <?xml-model href="https://cdn.docbook.org/schema/5.2/rng/docbookxi.rng"
+            type="application/xml"
+            schematypens="http://relaxng.org/ns/structure/1.0"?>
+
         ```
 
 - Associate XML files based on a file suffix, for example, `*.xml`. The drawback
