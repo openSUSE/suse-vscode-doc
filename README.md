@@ -29,28 +29,6 @@ Install the XML extension by RedHat. The exention ID is
 
 To let VSCode be aware of GeekoDoc and DocBook assembly schema, you have two options:
 
-- Insert an XML model definition at the top of the XML file *before* the root
-  element, but after `<?xml version="1.0"/>`.
-    - for GeekoDoc files:
-        ```xml
-        <?xml-model href="urn:x-suse:rng:v2:geekodoc-flat"
-            type="application/xml"
-            schematypens="http://relaxng.org/ns/structure/1.0"?>
-        ```
-    - for DocBook assembly files:
-        ```xml
-        <?xml-model href="https://cdn.docbook.org/schema/5.2/rng/assemblyxi.rng"
-            type="application/xml"
-            schematypens="http://relaxng.org/ns/structure/1.0"?>
-
-    - for DocBook files:
-        ```xml
-        <?xml-model href="https://cdn.docbook.org/schema/5.2/rng/docbookxi.rng"
-            type="application/xml"
-            schematypens="http://relaxng.org/ns/structure/1.0"?>
-
-        ```
-
 - Associate XML files based on a file suffix, for example, `*.xml`. The drawback
   is that *all* files with the suffix will be associated, no matter whether it
   is a DocBook file or not. `settings.json` example:
@@ -67,6 +45,22 @@ To let VSCode be aware of GeekoDoc and DocBook assembly schema, you have two opt
         }
     ],
     ```
+
+- Insert an XML model definition at the top of the XML file *before* the root
+  element (for example, after `<?xml version="1.0"/>`).
+    - for GeekoDoc files:
+        ```xml
+        <?xml-model href="urn:x-suse:rng:v2:geekodoc-flat"
+            type="application/xml"
+            schematypens="http://relaxng.org/ns/structure/1.0"?>
+        ```
+    - for DocBook assmbly files:
+        ```xml
+        <?xml-model href="https://cdn.docbook.org/schema/5.2/rng/assemblyxi.rng"
+            type="application/xml"
+            schematypens="http://relaxng.org/ns/structure/1.0"?>
+        ```
+
 
 ### Resolve references inside the current file
 
