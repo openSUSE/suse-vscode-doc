@@ -25,24 +25,41 @@ via GitHub pull requests or issues.
 Install the XML extension by RedHat. The exention ID is
 [`redhat.vscode-xml`](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-xml).
 
-### Support for GeekoDoc's RELAX NG schema
+### Support for RELAX NG schema
 
-To let VSCode be aware of GeekoDoc, you need to associate XML files with the
-GeekoDoc schema. Add the following to `settings.json` and save the file in your
-user directory or the project's workspace:
+To let VSCode be aware of GeekoDoc and DocBook assembly schema, you have two options:
 
-```json
-"xml.fileAssociations": [
-    {
-        "pattern": "**/*.asm.xml",
-        "systemId": "file:///usr/share/xml/docbook/schema/rng/5.2/assemblyxi.rng"
-    },
-    {
-        "pattern": "**/*.xml",
-        "systemId": "file:///usr/share/xml/geekodoc/rng/geekodoc-latest-flat.rng"
-    }
-],
-```
+- Insert an XML model definition at the top of the XML file *before* the root
+  element (for example, after `<?xml version="1.0"/>`).
+    - for GeekoDoc files:
+        ```xml
+        <?xml-model href="urn:x-suse:rng:v2:geekodoc-flat"
+            type="application/xml"
+            schematypens="http://relaxng.org/ns/structure/1.0"?>
+        ```
+    - for DocBook assmbly files:
+        ```xml
+        <?xml-model href="https://cdn.docbook.org/schema/5.2/rng/assemblyxi.rng"
+            type="application/xml"
+            schematypens="http://relaxng.org/ns/structure/1.0"?>
+        ```
+
+- Associate XML files based on a file suffix, for example, `*.xml`. The drawback
+  is that *all* files with the suffix will be associated, no matter whether it
+  is a DocBook file or not. `settings.json` example:
+
+    ```json
+    "xml.fileAssociations": [
+        {
+            "pattern": "**/*.asm.xml",
+            "systemId": "file:///usr/share/xml/docbook/schema/rng/5.2/assemblyxi.rng"
+        },
+        {
+            "pattern": "**/*.xml",
+            "systemId": "file:///usr/share/xml/geekodoc/rng/geekodoc-latest-flat.rng"
+        }
+    ],
+    ```
 
 ### Resolve references inside the current file
 
