@@ -30,7 +30,7 @@ Install the XML extension by RedHat. The exention ID is
 To let VSCode be aware of GeekoDoc and DocBook assembly schema, you have two options:
 
 - Insert an XML model definition at the top of the XML file *before* the root
-  element (for example, after `<?xml version="1.0"/>`).
+  element, but after `<?xml version="1.0"/>`.
     - for GeekoDoc files:
         ```xml
         <?xml-model href="urn:x-suse:rng:v2:geekodoc-flat"
