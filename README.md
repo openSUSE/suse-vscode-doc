@@ -131,10 +131,9 @@ matching regular expression to `settings.json`:
     "/<(\n|.)*?>/g",
     "/<\/.*?>/g",
     "/&.*;/g",
-    "/<screen.*?>(\n|.)*?<\/screen>/g",
-    "/<command.*?>(\n|.)*?<\/command>/g",
-],
-```
+    "/<(screen|command|package|option|filename|systemitem).*?>(\n|.)*?</(\\1)>/g",
+  ],
+  ```
 
 ### Marking as incorrect
 
