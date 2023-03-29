@@ -95,6 +95,9 @@ Following are useful settings. Consider adding them to `settings.json`:
 "cSpell.caseSensitive": true,
 "cSpell.minWordLength": 3,
 "cSpell.showAutocompleteSuggestions": true,
+"cSpell.enabledLanguageIds": [
+    "xml"
+],
 ```
 
 ### Custom dictionaries
