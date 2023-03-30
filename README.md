@@ -141,7 +141,7 @@ matching regular expression to `settings.json`:
 ### Marking as incorrect
 
 You can insert a list of phrases that are always considered incorrectly spelled.
-Add the list to  `.vscode/settings.json`:
+Add the list to  `settings.json`:
 ```json
 "cSpell.flagWords": [
     "filesystem"
@@ -211,7 +211,7 @@ in your user configuration directory add the following content:
 ```
 
 TIP: Because the XML extension already defines `ctrl+shift+i`, disable XML
-formatting in `.vscode/tasks.json`:
+formatting in `tasks.json`:
 
 ```json
 "xml.format.enabled": false,
