@@ -49,12 +49,12 @@
     "Section": {
         "prefix": "s",
         "body": [
-            "<sect${1|1,2,3,4,ion|} xml:id=\"${2:insert ID}\">",
+            "<sect${1|ion,1,2,3,4|} xml:id=\"${2:insert ID}\">",
             "\t<title>${3:insert title}</title>",
             "\t<para>",
             "\t\t${4:insert text}",
             "\t</para>",
-            "</sect${1|1,2,3,4,ion|}>"
+            "</sect${1|ion,1,2,3,4|}>"
         ]
     },
     "Variable list entry": {
