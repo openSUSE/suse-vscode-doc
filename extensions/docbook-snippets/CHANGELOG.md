@@ -1,5 +1,10 @@
 # Change Log
 
+## 0.3.0
+
+- Added <title> to <table>
+- improved section snippet to offer numbered <sectX>'s below <section>
+- added <info> and <merge> structures for assembly files
 ## 0.2.3
 
 - Fixed path to an animation
