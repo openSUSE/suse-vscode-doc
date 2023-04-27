@@ -382,5 +382,41 @@
             "\t</tgroup>",
             "</table>"
         ]
+    },
+    "Abstract": {
+        "prefix": "ab",
+        "body": [
+            "<abstract>",
+            "\t<para>",
+            "\t\t${1:insert text}",
+            "\t</para>",
+            "</abstract>",
+        ]
+    },
+    "Info": {
+        "prefix": "in",
+        "body": [
+            "<info>",
+            "\t<title>${1:insert title}</title>",
+            "\t<abstract>",
+            "\t\t<para>",
+            "\t\t\t${2:insert text}",
+            "\t\t</para>",
+            "\t</abstract>",
+            "</info>"
+        ]
+    },
+    "Assembly merge": {
+        "prefix": "mg",
+        "body": [
+            "<merge>",
+            "\t<title>${1:insert title}</title>",
+            "\t<abstract>",
+            "\t\t<para>",
+            "\t\t\t${2:insert text}",
+            "\t\t</para>",
+            "\t</abstract>",
+            "</merge>"
+        ]
     }
 }
