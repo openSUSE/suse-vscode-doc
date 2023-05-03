@@ -1,7 +1,7 @@
 {
     "[xml]": {
         "editor.rulers": [
-            80
+            100
         ],
         "editor.tabSize": 2,
         "rewrap.autoWrap.enabled": true,
