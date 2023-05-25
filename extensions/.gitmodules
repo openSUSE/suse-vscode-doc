@@ -1,0 +1,3 @@
+[submodule "suse-vale-styleguide"]
+	path = suse-vale-styleguide
+	url = https://github.com/openSUSE/suse-vale-styleguide
