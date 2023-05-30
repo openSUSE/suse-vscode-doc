@@ -1,0 +1,18 @@
+{
+  "name": "suse-vale-styleguide",
+  "displayName": "SUSE styleguide Vale rules",
+  "description": "Vale rules for SUSE styleguide",
+  "version": "0.0.1",
+  "repository": "https://github.com/openSUSE/suse-vale-styleguide/",
+  "publisher": "openSUSE",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Linters"
+  ],
+  "activationEvents": [
+    "onLanguage:xml"
+  ],
+  "main": "extension.js"
+}
