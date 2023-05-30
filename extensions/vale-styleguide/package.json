@@ -2,7 +2,7 @@
   "name": "suse-vale-styleguide",
   "displayName": "SUSE Vale rules",
   "description": "Vale rules for SUSE styleguide",
-  "icon": "",
+  "icon": "icon.png",
   "version": "0.1.0",
   "repository": "https://github.com/openSUSE/suse-vale-styleguide/",
   "publisher": "openSUSE",
