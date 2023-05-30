@@ -14,7 +14,7 @@ For this extension to work, meet the following requirements:
    unpack it and copy to a directory in your `$PATH`.
 2. Install the `vale-vscode` VSCode extension from the VSCode market place
     ```
-    ext install ChrisChinchilla.vale-vscode
+    code --install-extension ChrisChinchilla.vale-vscode
     ```
 3. Install this openSUSE.suse-vale-styleguide extension from the VSCode market
    place
