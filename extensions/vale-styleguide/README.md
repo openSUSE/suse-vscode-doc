@@ -12,12 +12,13 @@ For this extension to work, meet the following requirements:
 1. Download the `vale` binary from
    [github.com/errata-ai/vale/releases](https://github.com/errata-ai/vale/releases),
    unpack it and copy to a directory in your `$PATH`.
-2. Install the `vale-vscode` VSCode extension from the VSCode market place
+2. Install the `vale-vscode` VSCode extension from the VSCode market place,
+   for example:
     ```
     code --install-extension ChrisChinchilla.vale-vscode
     ```
 3. Install this openSUSE.suse-vale-styleguide extension from the VSCode market
-   place
+   place, for example:
     ```
     code --install-extension openSUSE.suse-vale-styleguide
     ```
