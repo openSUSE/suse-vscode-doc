@@ -19,7 +19,7 @@ For this extension to work, meet the following requirements:
 3. Install this openSUSE.suse-vale-styleguide extension from the VSCode market
    place
     ```
-    ext install openSUSE.suse-vale-styleguide
+    code --install-extension openSUSE.suse-vale-styleguide
     ```
 
 
