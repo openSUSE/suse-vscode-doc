@@ -1,3 +1,3 @@
-[submodule "suse-vale-styleguide"]
-	path = extensions/suse-vale-styleguide/styles
+[submodule "extensions/vale-styleguide/styles"]
+	path = extensions/vale-styleguide/styles
 	url = https://github.com/openSUSE/suse-vale-styleguide
