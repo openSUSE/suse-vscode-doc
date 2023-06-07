@@ -6,6 +6,9 @@
   Input:
      DocBook 5 document
 
+  Output:
+     Single XHTML document
+
   Author:    Thomas Schraitle <toms@opensuse.org>
   Copyright: 2023, Thomas Schraitle
 
@@ -35,7 +38,8 @@
   <xsl:param name="css.decoration" select="0"/>
   <xsl:param name="allow-anchors" select="0"/>
   <xsl:param name="suppress.navigation" select="1"/>
-
+  <xsl:param name="docbook.css.link" select="0"/>
+  <xsl:param name="docbook.css.source"/>
 
   <!-- Title page -->
   <xsl:template match="d:info/*[not(self::d:title or self::d:subtitle or self::d:titleabbrev or self::d:abstract)]"
@@ -60,5 +64,8 @@
   <!-- We don't want to create IDs with <a id="..."> -->
   <xsl:template match="*" mode="common.html.attributes"/>
 
+  <!-- Remove class attribute -->
+  <xsl:template name="generate.class.attribute"/>
+  <xsl:template match="*" mode="class.attribute"/>
 
 </xsl:stylesheet>
