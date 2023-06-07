@@ -7,7 +7,8 @@
      DocBook 5 document
 
   Output:
-     Single XHTML document
+     Single, simplified XHTML document
+
 
   Author:    Thomas Schraitle <toms@opensuse.org>
   Copyright: 2023, Thomas Schraitle
@@ -67,5 +68,7 @@
   <!-- Remove class attribute -->
   <xsl:template name="generate.class.attribute"/>
   <xsl:template match="*" mode="class.attribute"/>
+
+  <xsl:template match="comment()"/>
 
 </xsl:stylesheet>
