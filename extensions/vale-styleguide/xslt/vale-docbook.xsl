@@ -9,6 +9,7 @@
   Output:
      Single, simplified XHTML document
 
+
   Author:    Thomas Schraitle <toms@opensuse.org>
   Copyright: 2023, Thomas Schraitle
 
