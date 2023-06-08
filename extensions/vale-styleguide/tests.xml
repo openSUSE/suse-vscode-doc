@@ -13,25 +13,36 @@
  xmlns:xlink="http://www.w3.org/1999/xlink">
   <title>SUSE Vale rules tests</title>
   <section>
-    <title>Simple series</title>
-    <variablelist>
-      <varlistentry>
-        <term>CORRECT</term>
-        <listitem>
-          <para>
-            Mary, Joe and &joey; went to school. The most beautiful day, deep
-            dark night, and the shade under the tree.
-          </para>
-        </listitem>
-      </varlistentry>
-      <varlistentry>
-        <term>WRONG</term>
-        <listitem>
-          <para>
-            Mary, Joe, and &joey; went to school.
-          </para>
-        </listitem>
-      </varlistentry>
-    </variablelist>
+    <title>SimpleSeries.yml</title>
+    <para>
+      CORRECT Mary, Joe and &joey; went to school.
+    </para>
+    <para>
+      CORRECT The most beautiful day, deep dark night, and the shadow of you.
+    </para>
+    <para>
+      WRONG Mary, Joe, and &joey; went to school.
+    </para>
+  </section>
+  <section xml:id="usage">
+    <title>Usage.yml</title>
+    <para>
+      CORRECT Use a static IP address.
+    </para>
+  </section>
+  <section xml:id="colons">
+    <title>Colons.yml</title>
+    <para>
+      CORRECT <guimenu>Host Name</guimenu>: IP address or host name of the
+      server exporting the network file system.
+    </para>
+    <para>
+      WRONG <guimenu>Host Name</guimenu>: An IP address or host name of the
+      server exporting the network file system.
+    </para>
+    <para>
+      WRONG <guimenu>Host Name</guimenu>: A privileged address or host name of
+      the server exporting the network file system.
+    </para>
   </section>
 </topic>
