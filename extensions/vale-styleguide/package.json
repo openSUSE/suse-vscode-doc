@@ -12,5 +12,8 @@
   "categories": [
     "Linters"
   ],
+  "activationEvents": [
+    "onLanguage:xml"
+  ],
   "main": "extension.js"
 }

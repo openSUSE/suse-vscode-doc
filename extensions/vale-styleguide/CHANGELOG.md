@@ -4,7 +4,6 @@
 
 ### Extension
 - added customized docbook XSLT stylesheet
-- removed extension activation on XML files only
 - added test file with correct and wrong sentence examples
 - icon made transparent
 
