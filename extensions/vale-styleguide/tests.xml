@@ -12,7 +12,7 @@
  xmlns:xi="http://www.w3.org/2001/XInclude"
  xmlns:xlink="http://www.w3.org/1999/xlink">
   <title>SUSE Vale rules tests</title>
-  <section>
+  <section xml:id="simpleseriess">
     <title>SimpleSeries.yml</title>
     <para>
       CORRECT Mary, Joe and &joey; went to school.
@@ -45,4 +45,31 @@
       the server exporting the network file system.
     </para>
   </section>
+<section xml:id="surroundingcommas">
+  <title>SurroundingCommas</title>
+  <para>
+    CORRECT Our neighbor, for instance, does not eat.
+  </para>
+  <para>
+    CORRECT Our neighbor, for example, does not eat.
+  </para>
+  <para>
+    CORRECT In this case, our neighbor does not eat.
+  </para>
+  <para>
+    CORRECT Namely, our neighbor does not eat.
+  </para>
+  <para>
+    WRONG Our neighbor for example, does not eat.
+  </para>
+  <para>
+    WRONG Our neighbor, for instance does not eat.
+  </para>
+  <para>
+    WRONG Our neighbor in this case does not eat.
+  </para>
+  <para>
+    WRONG Namely our neighbor does not eat.
+  </para>
+</section>
 </topic>
