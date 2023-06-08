@@ -45,31 +45,37 @@
       the server exporting the network file system.
     </para>
   </section>
-<section xml:id="surroundingcommas">
-  <title>SurroundingCommas</title>
-  <para>
-    CORRECT Our neighbor, for instance, does not eat.
-  </para>
-  <para>
-    CORRECT Our neighbor, for example, does not eat.
-  </para>
-  <para>
-    CORRECT In this case, our neighbor does not eat.
-  </para>
-  <para>
-    CORRECT Namely, our neighbor does not eat.
-  </para>
-  <para>
-    WRONG Our neighbor for example, does not eat.
-  </para>
-  <para>
-    WRONG Our neighbor, for instance does not eat.
-  </para>
-  <para>
-    WRONG Our neighbor in this case does not eat.
-  </para>
-  <para>
-    WRONG Namely our neighbor does not eat.
-  </para>
-</section>
+  <section xml:id="surroundingcommas">
+    <title>SurroundingCommas</title>
+    <para>
+      CORRECT Our neighbor, for instance, does not eat.
+    </para>
+    <para>
+      CORRECT Our neighbor, for example, does not eat.
+    </para>
+    <para>
+      CORRECT In this case, our neighbor does not eat.
+    </para>
+    <para>
+      CORRECT Namely, our neighbor does not eat.
+    </para>
+    <para>
+      CORRECT Run your custom command, for example:
+    </para>
+    <para>
+      WRONG Our neighbor for example, does not eat.
+    </para>
+    <para>
+      WRONG Our neighbor, for instance does not eat.
+    </para>
+    <para>
+      WRONG Our neighbor in this case does not eat.
+    </para>
+    <para>
+      WRONG Namely our neighbor does not eat.
+    </para>
+    <para>
+      WRONG Run your custom command for example:
+    </para>
+  </section>
 </topic>
