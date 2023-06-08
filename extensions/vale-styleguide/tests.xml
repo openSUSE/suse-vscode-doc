@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="urn:x-suse:xslt:profiling:docbook51-profile.xsl"
+ type="text/xml"
+ title="Profiling step"?>
+<!DOCTYPE article [
+  <!ENTITY joey "Joey">
+]>
+<topic xml:id="suse-vale-tests" xml:lang="en"
+ role="task"
+ xmlns="http://docbook.org/ns/docbook" version="5.1"
+ xmlns:its="http://www.w3.org/2005/11/its"
+ xmlns:xi="http://www.w3.org/2001/XInclude"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>SUSE Vale rules tests</title>
+  <section>
+    <title>Simple series</title>
+    <variablelist>
+      <varlistentry>
+        <term>CORRECT</term>
+        <listitem>
+          <para>
+            Mary, Joe and &joey; went to school. The most beautiful day, deep
+            dark night, and the shade under the tree.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>WRONG</term>
+        <listitem>
+          <para>
+            Mary, Joe, and &joey; went to school.
+          </para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </section>
+</topic>
