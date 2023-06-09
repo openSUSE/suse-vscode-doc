@@ -12,6 +12,18 @@
  xmlns:xi="http://www.w3.org/2001/XInclude"
  xmlns:xlink="http://www.w3.org/1999/xlink">
   <title>SUSE Vale rules tests</title>
+  <section xml:id="skipped">
+    <title>Skipped markup</title>
+<screen>For example this error should be skipped!</screen>
+    <!-- For example this error should be skipped! -->
+    <remark>For example this error should be skipped!</remark>
+    <para>
+      <command>For example this error should be skipped!</command> and
+      <guimenu>For example this error should be skipped!</guimenu> <package>For
+      example this error may be skipped!</package> <envar>Usually is always
+      wrong</envar>
+    </para>
+  </section>
   <section xml:id="simpleseriess">
     <title>SimpleSeries.yml</title>
     <para>
@@ -76,6 +88,15 @@
     </para>
     <para>
       WRONG Run your custom command for example:
+    </para>
+    <para>
+      WRONG For example run your custom command:
+    </para>
+  </section>
+  <section xml:id="hedging">
+    <title>Hedging</title>
+    <para>
+      CORRECT This might be a problem. You may click the button now.
     </para>
   </section>
 </topic>
