@@ -21,7 +21,7 @@
       <command>For example this error should be skipped!</command> and
       <guimenu>For example this error should be skipped!</guimenu> <package>For
       example this error may be skipped!</package> <envar>Usually is always
-      wrong</envar>
+      wrong</envar> <literal>let me for example drive</literal>
     </para>
   </section>
   <section xml:id="simpleseriess">
@@ -75,6 +75,18 @@
       CORRECT Run your custom command, for example:
     </para>
     <para>
+      CORRECT This sentence is putting a phrase at the beginning of a new line,
+      for example, like this.
+    </para>
+    <para>
+      CORRECT A code that is being generated.
+    </para>
+    <para>
+      CORRECT Let us prolong this sentence so that the phrase is at the... For
+      example, like this.
+    </para>
+    <para>
+    
       WRONG Our neighbor for example, does not eat.
     </para>
     <para>
