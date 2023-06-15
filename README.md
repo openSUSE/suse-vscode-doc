@@ -82,19 +82,19 @@ options:
 To autocomplete DocBook XML IDs from the current file when using `<xref linkend=""/>`
 references, add the following lines to `settings.json`:
 
-    ```json
-    "xml.references": [
-        {
-            "pattern": "**/*.xml",
-            "expressions": [
-                {
-                    "from": "xref/@linkend",
-                    "to": "@xml:id"
-                },
-            ]
-        }
-    ],
-    ```
+```json
+"xml.references": [
+    {
+        "pattern": "**/*.xml",
+        "expressions": [
+            {
+                "from": "xref/@linkend",
+                "to": "@xml:id"
+            },
+        ]
+    }
+],
+```
 
 Use `Ctrl+space` to view the suggestions.
 
@@ -106,34 +106,34 @@ Install the Code Spell Checker extension
 
 Following are useful settings. Consider adding them to `settings.json`:
 
-    ```json
-    "cSpell.caseSensitive": true,
-    "cSpell.minWordLength": 3,
-    "cSpell.showAutocompleteSuggestions": true,
-    "cSpell.enabledLanguageIds": [
-        "xml"
-    ],
-    ```
+```json
+"cSpell.caseSensitive": true,
+"cSpell.minWordLength": 3,
+"cSpell.showAutocompleteSuggestions": true,
+"cSpell.enabledLanguageIds": [
+    "xml"
+],
+```
 
 ### Custom dictionaries
 
 To include SUSE's dictionary, install the `suse-documentation-dicts-en` package
 and the following to `settings.json`:
 
-    ```json
-    "cSpell.customDictionaries": {
-        "SUSE custom": {
-            "name": "SUSE custom dictionary",
-            "path": "/usr/share/hunspell/en_US-suse-doc.dic",
-            "addWords": false,
-        },
-        "SUSE adWords": {
-            "name": "SUSE adWords dictionary",
-            "path": "~/SUSE-adWords-dict.dic",
-            "addWords": true,
-        }
+```json
+"cSpell.customDictionaries": {
+    "SUSE custom": {
+        "name": "SUSE custom dictionary",
+        "path": "/usr/share/hunspell/en_US-suse-doc.dic",
+        "addWords": false,
     },
-    ```
+    "SUSE adWords": {
+        "name": "SUSE adWords dictionary",
+        "path": "~/SUSE-adWords-dict.dic",
+        "addWords": true,
+    }
+},
+```
 
 The first dictionary is read-only and enhances the common English language with
 in-house collected technical terms. The second one is your local writable
@@ -144,51 +144,51 @@ dictionary to collect still-unknown words.
 To ignore specific strings such as XML markup from being spell-checked, insert
 matching regular expression to `settings.json`:
 
-    ```json
-    "cSpell.ignoreRegExpList": [
-        "/<(\n|.)*?>/g",
-        "/<\/.*?>/g",
-        "/&.*;/g",
-        "/<(screen|command|package|option|filename|systemitem).*?>(\n|.)*?</(\\1)>/g",
-    ],
-    ```
+```json
+"cSpell.ignoreRegExpList": [
+    "/<(\n|.)*?>/g",
+    "/<\/.*?>/g",
+    "/&.*;/g",
+    "/<(screen|command|package|option|filename|systemitem).*?>(\n|.)*?</(\\1)>/g",
+],
+```
 
 ### Marking as incorrect
 
 You can insert a list of phrases that are always considered incorrectly spelled.
 Add the list to  `settings.json`:
 
-    ```json
-    "cSpell.flagWords": [
-        "filesystem"
-    ],
-    ```
+```json
+"cSpell.flagWords": [
+    "filesystem"
+],
+```
 
 ## DocBook snippets
 
 Snippets are templates of complete DocBook structures. You can insert them into
 a document by typing defined prefixes. This is an example of a `<para>` snippet:
 
-    ```json
-    "Paragraph": {
-        "scope": "xml",
-        "prefix": "pa",
-        "body": [
-            "<para>",
-            "\t${1:insert text}",
-            "</para>"
-        ]
-    },
-    ```
+```json
+"Paragraph": {
+    "scope": "xml",
+    "prefix": "pa",
+    "body": [
+        "<para>",
+        "\t${1:insert text}",
+        "</para>"
+    ]
+},
+```
 
 Obtain all snippets by installing the *DocBook Snippets* extension.
 Alternatively, clone the
 https://github.com/openSUSE/vscode-docbook-snippets repository and make a
 symbolic link in your `~/.config/VSCodium/User/snippets` directory, for example:
 
-    ```bash
-    ln -s ~/devel/vscode-extensions/vscode-docbook-snippets/snippets/snippets.code-snippets docbook.code-snippets
-    ```
+```bash
+ln -s ~/devel/vscode-extensions/vscode-docbook-snippets/snippets/snippets.code-snippets docbook.code-snippets
+```
 
 ## daps integration
 
@@ -199,42 +199,42 @@ the *Task Shell Input* extension. Tasks are stored in the `tasks.json` file.
 The following task example formats the open XML file with the `daps-xmlformat`
 command:
 
-    ```json
-    "label": "Daps: XML format",
-    "type": "shell",
-    "command": "daps-xmlformat",
-    "args": [
-        "-i",
-        "${file}"
-    ],
-    "group": "build",
-    "presentation": {
-        "echo": true,
-        "reveal": "silent",
-        "panel": "shared",
-    },
-    ```
+```json
+"label": "Daps: XML format",
+"type": "shell",
+"command": "daps-xmlformat",
+"args": [
+    "-i",
+    "${file}"
+],
+"group": "build",
+"presentation": {
+    "echo": true,
+    "reveal": "silent",
+    "panel": "shared",
+},
+```
 
 To assign a shortcut to this particular task, create a `keybindings.json` file
 in your user configuration directory add the following content:
 
-    ```json
-    [
-        {
-            "key": "ctrl+shift+i",
-            "command": "workbench.action.tasks.runTask",
-            "args": "Daps: XML format",
-            "when": "editorLangId == xml"
-        },
-    ]
-    ```
+```json
+[
+    {
+        "key": "ctrl+shift+i",
+        "command": "workbench.action.tasks.runTask",
+        "args": "Daps: XML format",
+        "when": "editorLangId == xml"
+    },
+]
+```
 
 TIP: because the XML extension already defines `ctrl+shift+i`, disable XML
 formatting in `tasks.json`:
 
-    ```json
-    "xml.format.enabled": false,
-    ```
+```json
+"xml.format.enabled": false,
+```
 
 See https://github.com/openSUSE/suse-vscode-doc for my collection of daps tasks.
 
