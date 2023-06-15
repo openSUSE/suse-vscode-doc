@@ -30,7 +30,7 @@ The documentation team delivers the following extension for VSCode:
 * DocBook Snippets
 * SUSE Vale rules
 
-TIP: you can install them from VSCode by pressing CTRL+SHIFT+X and typing the
+TIP: you can install them from the editor by pressing CTRL+SHIFT+X and typing the
 name of the extension.
 
 ## XML support
@@ -40,7 +40,7 @@ Install the XML extension by RedHat. The exention ID is
 
 ### Support for RELAX NG schema
 
-To let VSCode be aware of GeekoDoc and DocBook assembly schema, you have two
+To let VSCode be aware of GeekoDoc and DocBook assembly schemas, you have two
 options:
 
 - RECOMMENDED: associate XML files based on a file suffix, for example, `*.xml`.
@@ -79,8 +79,8 @@ options:
 
 ### Resolve references inside the current file
 
-To autocomplete XML IDs from the current file in `<xref linkend=""/>`
-references, add the following to `settings.json`:
+To autocomplete DocBook XML IDs from the current file when using `<xref linkend=""/>`
+references, add the following lines to `settings.json`:
 
     ```json
     "xml.references": [
@@ -181,13 +181,13 @@ a document by typing defined prefixes. This is an example of a `<para>` snippet:
     },
     ```
 
-You can obtain all the snippets collection by installing the *DocBook Snippets*
-extension. Alternatively, clone the
+Obtain all snippets by installing the *DocBook Snippets* extension.
+Alternatively, clone the
 https://github.com/openSUSE/vscode-docbook-snippets repository and make a
 symbolic link in your `~/.config/VSCodium/User/snippets` directory, for example:
 
     ```bash
-    ln -s /home/USER_NAME/devel/vscode-extensions/vscode-docbook-snippets/snippets/snippets.code-snippets docbook.code-snippets
+    ln -s ~/devel/vscode-extensions/vscode-docbook-snippets/snippets/snippets.code-snippets docbook.code-snippets
     ```
 
 ## daps integration
@@ -242,6 +242,6 @@ See https://github.com/openSUSE/suse-vscode-doc for my collection of daps tasks.
 
 Vale style checker can apply rules from SUSE styleguide and highlight errors and
 warning in the text after savin the file with CTRL+S. To make it work, you need
-to install the Vale binary and either install the *SUSE Vale rules* extension
-into VSCode, or configure Vale manually as described in
+to install the Vale binary first. Then either install the *SUSE Vale rules* extension
+into VSCode or configure Vale manually as described in
 https://github.com/openSUSE/suse-vale-styleguide.
