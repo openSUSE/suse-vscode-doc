@@ -19,6 +19,19 @@ You can find my collection of configuration files for VSCode at
 https://github.com/openSUSE/suse-vscode-doc -- feel free to add your suggestions
 via GitHub pull requests or issues.
 
+## Extensions
+
+Many tasks can be automatized by using *extensions*. They are available from
+VSCode marketplaces:
+* for VSCode: https://marketplace.visualstudio.com/VSCode
+* for VSCodium: https://open-vsx.org/
+
+The documentation team delivers the following extension for VSCode:
+* DocBook Snippets
+* SUSE Vale rules
+
+TIP: you can install them from VSCode by pressing CTRL+SHIFT+X and typing the
+name of the extension.
 
 ## XML support
 
@@ -168,11 +181,14 @@ a document by typing defined prefixes. This is an example of a `<para>` snippet:
     },
     ```
 
-Insert custom snippets into the `snippets/docbook.code-snippets` file or install
-the *DocBook Snippets* extension from the VSCode marketplace.
+You can obtain all the snippets collection by installing the *DocBook Snippets*
+extension. Alternatively, clone the
+https://github.com/openSUSE/vscode-docbook-snippets repository and make a
+symbolic link in your `~/.config/VSCodium/User/snippets` directory, for example:
 
-See https://github.com/openSUSE/vscode-docbook-snippets for my collection of
-DocBook snippets.
+    ```bash
+    ln -s /home/USER_NAME/devel/vscode-extensions/vscode-docbook-snippets/snippets/snippets.code-snippets docbook.code-snippets
+    ```
 
 ## daps integration
 
@@ -224,7 +240,8 @@ See https://github.com/openSUSE/suse-vscode-doc for my collection of daps tasks.
 
 ## Style checker
 
-Dmitri Popov developed style files for the Vale style checker in an open DocBook
-file. Dmitri has written a comprehensive HOWTO on installing `vale` and *Vale*
-extension to make things working. Refer to
-https://github.com/openSUSE/suse-vale-styleguide for detailed information.
+Vale style checker can apply rules from SUSE styleguide and highlight errors and
+warning in the text after savin the file with CTRL+S. To make it work, you need
+to install the Vale binary and either install the *SUSE Vale rules* extension
+into VSCode, or configure Vale manually as described in
+https://github.com/openSUSE/suse-vale-styleguide.
