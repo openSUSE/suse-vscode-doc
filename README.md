@@ -186,7 +186,7 @@ Refer to https://github.com/openSUSE/vscode-daps for more details.
 ## DocBook snippets
 
 Snippets are templates of complete DocBook structures. You can insert them into
-a document by typing predefined shortcuts. For example, `pa` inserts
+a document by typing predefined shortcuts. For example, `pa` inserts the following snippet and places the cursor between start and end tag:
 `<para></para>`.
 
 ## AsciiDoc
