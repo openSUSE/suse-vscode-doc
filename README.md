@@ -3,15 +3,19 @@
 ## Introduction
 
 VSCode is an IDE with an advanced text editor. It comes in 2 flavors:
-* *VSCode* - proprietary with closed-source licensed plugins
-* *VSCodium* - community driven build based on open-source software
+
+* *Code* - proprietary with closed-source licensed plugins
+* *Codium* - community driven build based on open-source software
+
+You can use either Code or Codium according to your personal preference.
 
 ## Extensions
 
 *Extensions* extend VSCode's basic functionality. They are available from
 VSCode marketplaces:
-* https://marketplace.visualstudio.com/VSCode (VSCode)
-* https://open-vsx.org/ (VSCodium)
+* https://marketplace.visualstudio.com/VSCode (Code)
+* https://open-vsx.org/ (Codium)
+
 
 You will need to download the following VSCode extensions:
 
