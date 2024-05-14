@@ -16,9 +16,9 @@ VSCode marketplaces:
 You will need to download the following VSCode extensions:
 
 * XML - basic XML support
-* AsciiDoc - basic AsciiDoc support (requires `asciidoctor` binary)
+* AsciiDoc - basic AsciiDoc support (requires `ruby<RUBY_VERSION>-rubygem-asciidoctor` package installed)
 * DAPS - run `daps` commands from VSCode (requires `daps` package installed)
-* Vale VSCode - document style checker (requires `vale` binary)
+* Vale VSCode - document style checker (requires `vale` package installed)
 * SUSE Vale rules - set of style checker rules that follow SUSE style guide
 * Code Spell Checker - spell checker
 * DocBook Snippets - snippets that automate inserting simple and complex DB structures
