@@ -62,20 +62,20 @@ options:
 
 - RECOMMENDED: associate XML files based on a file suffix, for example, `*.xml`.
   The drawback is that *all* files with the suffix are associated, no matter
-  whether it is a DocBook file or not. `settings.json` example:
+  whether it is a DocBook file or not.
 
-    ```json
-    "xml.fileAssociations": [
-        {
-            "pattern": "**/*.asm.xml",
-            "systemId": "file:///usr/share/xml/docbook/schema/rng/5.2/assemblyxi.rng"
-        },
-        {
-            "pattern": "**/*.xml",
-            "systemId": "file:///usr/share/xml/geekodoc/rng/geekodoc-latest-flat.rng"
-        }
+```json
+"xml.fileAssociations": [
+    {
+        "pattern": "**/*.asm.xml",
+        "systemId": "file:///usr/share/xml/docbook/schema/rng/5.2/assemblyxi.rng"
+    },
+    {
+        "pattern": "**/*.xml",
+        "systemId": "file:///usr/share/xml/geekodoc/rng/geekodoc-latest-flat.rng"
+    }
     ],
-    ```
+```
 
 - ALTERNATIVE: insert an XML model definition at the top of the XML file
   *before* the root element (for example, after `<?xml version="1.0"/>`).
@@ -97,7 +97,7 @@ options:
 ### XML: resolve references inside the current file
 
 To autocomplete DocBook XML IDs from the current file when using `<xref linkend=""/>`
-references, add the following lines to `settings.json`:
+references, add the following lines:
 
 ```json
 "xml.references": [
@@ -117,8 +117,6 @@ Use `Ctrl+space` to view the suggestions.
 
 ### Spellchecker: basic settings
 
-Following are useful settings. Consider adding them to `settings.json`:
-
 ```json
 "cSpell.enabled": true,
 "cSpell.caseSensitive": true,
@@ -134,9 +132,9 @@ Following are useful settings. Consider adding them to `settings.json`:
 ### Spellchecker: custom dictionaries
 
 To include SUSE's dictionary, install the `suse-documentation-dicts-en` package
-and the following to `settings.json`:
+and the following to VSCode settings:
 
-```
+```json
 "cSpell.customDictionaries": {
     "SUSE custom": {
         "name": "SUSE custom dictionary",
@@ -157,8 +155,7 @@ dictionary to collect still-unknown words.
 
 ### Spellchecker: ignoring strings
 
-To ignore specific strings such as XML markup from being spell-checked, insert
-matching regular expression to `settings.json`:
+You can ignore specific strings such as XML markup from being spell-checked.
 
 ```json
 "cSpell.ignoreRegExpList": [
@@ -175,7 +172,6 @@ matching regular expression to `settings.json`:
 ### Spellchecker: marking as incorrect
 
 You can insert a list of phrases that are always considered incorrectly spelled.
-Add the list to  `settings.json`:
 
 ```json
 "cSpell.flagWords": [
@@ -197,3 +193,13 @@ a document by typing predefined shortcuts. For example, `pa` inserts
 
 `Locked Preview to the Side` is a nice feature, activate it by pressing
 `CTRL+SHIFT+P`, then typing `asciidoc`.
+
+## Tips
+
+* Always open a *workspace*, not a single file. A documentation workspace is a folder where the `DC-*` file resides.
+* You can view all settings specific to an extension by pressing `CTRL+SHIFT+P`,
+  then typing the initial letters of the extension name, such as `daps`
+* Create GitHub issues if an extension is not working as expected.
+    - DAPS: https://github.com/openSUSE/vscode-daps/issues
+    - SUSE Vale rules: https://github.com/openSUSE/suse-vale-styleguide/issues
+    - DocBook Snippets: https://github.com/openSUSE/vscode-docbook-snippets/issues
