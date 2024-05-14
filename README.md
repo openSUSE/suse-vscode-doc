@@ -30,8 +30,8 @@ name of the extension.
 
 ## Configuration
 
-VSCode stores its configuration in JSON files. Settings apply either globally
-(user settings) or to the current workspace.
+VSCode stores its configuration in `settings.json` files. Settings apply either
+globally (user settings) or to the current workspace.
 
 User settings are stored in one of the following directories:
 
@@ -126,7 +126,8 @@ Following are useful settings. Consider adding them to `settings.json`:
 "cSpell.showAutocompleteSuggestions": true,
 "cSpell.enabledLanguageIds": [
     "xml",
-    "asciidoc"
+    "asciidoc",
+    "markdown"
 ],
 ```
 
