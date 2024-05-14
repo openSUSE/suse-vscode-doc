@@ -3,7 +3,7 @@
 ## Introduction
 
 VSCode is an IDE with an advanced text editor. It comes in 2 flavors:
-* *VSCode* - proprietary with with closed-source licensed plugins
+* *VSCode* - proprietary with closed-source licensed plugins
 * *VSCodium* - community driven build based on open-source software
 
 ## Extensions
