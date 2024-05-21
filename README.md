@@ -97,29 +97,13 @@ options:
             schematypens="http://relaxng.org/ns/structure/1.0"?>
         ```
 
+## Spell checker
 
-### XML: resolve references inside the current file
+Install the Code Spell Checker extension
 
-To autocomplete DocBook XML IDs from the current file when using `<xref linkend=""/>`
-references, add the following lines:
+### Basic settings
 
-```json
-"xml.references": [
-    {
-        "pattern": "**/*.xml",
-        "expressions": [
-            {
-                "from": "xref/@linkend",
-                "to": "@xml:id"
-            },
-        ]
-    }
-],
-```
-
-Use `Ctrl+space` to view the suggestions.
-
-### Spellchecker: basic settings
+Following are useful settings. Consider adding them to `settings.json`:
 
 ```json
 "cSpell.enabled": true,
