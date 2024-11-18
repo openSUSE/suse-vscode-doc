@@ -9,6 +9,16 @@ VSCode is an IDE with an advanced text editor. It comes in 2 flavors:
 
 You can use either Code or Codium according to your personal preference.
 
+## Useful shortcuts
+
+CTRL+B - Toggle the left pane.
+CTRL+~ - Toggles the bottom terminal pane.
+CTRL+\ - Split the current editor view vertically.
+CTRL+F - Find or replace a string or regexp in the currently active editor.
+CTRL+SHIFT+F - Find or replace a string across all files in the workspace.
+CTRL+P - Find a file.
+CTRL+SHIFT+P - Run VSCode command. You can assign shortcuts to any command.
+
 ## Extensions
 
 *Extensions* extend VSCode's basic functionality. They are available from
@@ -16,21 +26,29 @@ VSCode marketplaces:
 * https://marketplace.visualstudio.com/VSCode (Code)
 * https://open-vsx.org/ (Codium)
 
+TIP: you can install the extensions from the editor by pressing `CTRL+SHIFT+X` and typing the
+name of the extension.
 
-You will need to download the following VSCode extensions:
-
-* XML - basic XML support
-* AsciiDoc - basic AsciiDoc support (requires `ruby<RUBY_VERSION>-rubygem-asciidoctor` package installed)
+### Required extensions
 * DAPS - run `daps` commands from VSCode (requires `daps` package installed)
 * Vale VSCode - document style checker (requires `vale` package installed)
 * SUSE Vale rules - set of style checker rules that follow SUSE style guide
 * Code Spell Checker - spell checker
+
+### DocBook required extensions
 * DocBook Snippets - snippets that automate inserting simple and complex DB structures
+* XML - basic XML support
+
+### AsciiDoc required extensions
+* AsciiDoc - basic AsciiDoc support (requires `ruby<RUBY_VERSION>-rubygem-asciidoctor` package installed)
+
+### Recommended extensions
 * HTML / XML / RSS link checker - checks XML links and finds HTTPs alternatives
 * Rewrap - aligns the flow of a paragraph
-
-TIP: you can install them from the editor by pressing CTRL+SHIFT+X and typing the
-name of the extension.
+* GitLens - extended features for Git (source graph, commits, branches, cherry-picking)
+* Dupe File - duplicates a file in the explorer view
+* GitHub Pull requests - create and manage GH PRs (roll back to v0.100.0)
+* Todo Tree - displays TODO items from the source code comments
 
 ## Configuration
 
@@ -54,9 +72,10 @@ and override user settings.
 "xml.catalogs": [ // path to a system-wide XML catalog
     "/etc/xml/catalog"
 ],
+"xml.symbols.enabled": false, // ugly XML file structure
 "xml.validation.resolveExternalEntities": true, // enable XML entity processing
 "xml.validation.xInclude.enabled": false, // turn off xInclude parsing, it does not work
-"xml.codeLens.enabled": true, // display info about referencing and referenced lines
+"xml.codeLens.enabled": false, // disbale, we've got our own :-)
 ```
 
 ### XML: support for RELAX NG schema
