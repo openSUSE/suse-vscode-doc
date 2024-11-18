@@ -116,11 +116,7 @@ options:
             schematypens="http://relaxng.org/ns/structure/1.0"?>
         ```
 
-## Spell checker
-
-Install the Code Spell Checker extension
-
-### Basic settings
+### cSpell: Basic settings
 
 Following are useful settings. Consider adding them to `settings.json`:
 
@@ -136,7 +132,7 @@ Following are useful settings. Consider adding them to `settings.json`:
 ],
 ```
 
-### Spellchecker: custom dictionaries
+### cSpell: custom dictionaries
 
 To include SUSE's dictionary, install the `suse-documentation-dicts-en` package
 and the following to VSCode settings:
@@ -159,6 +155,9 @@ and the following to VSCode settings:
 The first dictionary is read-only and enhances the common English language with
 in-house collected technical terms. The second one is your local writable
 dictionary to collect still-unknown words.
+
+TIP: To help improve the spell-checking experience, you can submit your locally-collected
+list of words as described in https://github.com/openSUSE/suse-documentation-dicts?tab=readme-ov-file#adding-words.
 
 ### Spellchecker: ignoring strings
 
