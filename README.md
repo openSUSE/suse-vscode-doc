@@ -11,13 +11,13 @@ You can use either Code or Codium according to your personal preference.
 
 ## Useful shortcuts
 
-CTRL+B - Toggle the left pane.
-CTRL+~ - Toggles the bottom terminal pane.
-CTRL+\ - Split the current editor view vertically.
-CTRL+F - Find or replace a string or regexp in the currently active editor.
-CTRL+SHIFT+F - Find or replace a string across all files in the workspace.
-CTRL+P - Find a file.
-CTRL+SHIFT+P - Run VSCode command. You can assign shortcuts to any command.
+* `CTRL+B` - Toggle the left pane.
+* `CTRL+~` - Toggles the bottom terminal pane.
+* `CTRL+\` - Split the current editor view vertically.
+* `CTRL+F` - Find or replace a string or regexp in the currently active editor.
+* `CTRL+SHIFT+F` - Find or replace a string across all files in the workspace.
+* `CTRL+P` - Find a file.
+* `CTRL+SHIFT+P` - Run VSCode command. You can assign shortcuts to any command.
 
 ## Extensions
 
