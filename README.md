@@ -42,13 +42,17 @@ then typing the initial letters of the extension name, such as `daps`
 ### DocBook required extensions
 * DocBook Snippets - snippets that automate inserting simple and complex DB structures
 * XML - basic XML support
+    * `F2` renames a tag
 
 ### AsciiDoc required extensions
 * AsciiDoc - basic AsciiDoc support (requires `ruby<RUBY_VERSION>-rubygem-asciidoctor` package installed)
 
 ### Recommended extensions
 * HTML / XML / RSS link checker - checks XML links and finds HTTPs alternatives
+    * `ALT+H` checks the links and searches HTTPS alternatives
+    * `ALT+T` in the bottom pane opens the link in the Web browser
 * Rewrap - aligns the flow of a paragraph
+    * `ALT+Q` rewraps the paragraph
 * GitLens - extended features for Git (source graph, commits, branches, cherry-picking)
 * Dupe File - duplicates a file in the explorer view
 * GitHub Pull requests - create and manage GH PRs (roll back to v0.100.0)
