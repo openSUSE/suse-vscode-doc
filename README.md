@@ -29,6 +29,10 @@ VSCode marketplaces:
 TIP: you can install the extensions from the editor by pressing `CTRL+SHIFT+X` and typing the
 name of the extension.
 
+TIP: You can view all settings specific to an extension by pressing `CTRL+SHIFT+P`,
+then typing the initial letters of the extension name, such as `daps`
+
+
 ### Required extensions
 * DAPS - run `daps` commands from VSCode (requires `daps` package installed)
 * Vale VSCode - document style checker (requires `vale` package installed)
@@ -159,7 +163,7 @@ dictionary to collect still-unknown words.
 TIP: To help improve the spell-checking experience, you can submit your locally-collected
 list of words as described in https://github.com/openSUSE/suse-documentation-dicts?tab=readme-ov-file#adding-words.
 
-### Spellchecker: ignoring strings
+### cSpell: ignoring strings
 
 You can ignore specific strings such as XML markup from being spell-checked.
 
@@ -175,7 +179,7 @@ You can ignore specific strings such as XML markup from being spell-checked.
 ],
 ```
 
-### Spellchecker: marking as incorrect
+### cSpell: marking as incorrect (optional)
 
 You can insert a list of phrases that are always considered incorrectly spelled.
 
@@ -203,8 +207,6 @@ a document by typing predefined shortcuts. For example, `pa` inserts the followi
 ## Tips
 
 * Always open a *workspace*, not a single file. A documentation workspace is a folder where the `DC-*` file resides.
-* You can view all settings specific to an extension by pressing `CTRL+SHIFT+P`,
-  then typing the initial letters of the extension name, such as `daps`
 * Create GitHub issues if an extension is not working as expected.
     - DAPS: https://github.com/openSUSE/vscode-daps/issues
     - SUSE Vale rules: https://github.com/openSUSE/suse-vale-styleguide/issues
