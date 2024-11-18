@@ -1,12 +1,20 @@
 {
     "[xml]": {
         "editor.rulers": [
-            100
+            80
         ],
         "editor.tabSize": 2,
         "rewrap.autoWrap.enabled": true,
     },
-    "xml.foldings.includeClosingTagInFold": true,
+    // common XML settings
+    "xml.catalogs": [
+        "/etc/xml/catalog"
+    ],
+    "xml.symbols.enabled": false,
+    "xml.validation.resolveExternalEntities": true,
+    "xml.validation.xInclude.enabled": false,
+    "xml.codeLens.enabled": false,
+    // associate RNG schemas to XML document according to suffix
     "xml.fileAssociations": [
         {
             "pattern": "**/*.asm.xml",
@@ -17,29 +25,15 @@
             "systemId": "file:///usr/share/xml/geekodoc/rng/geekodoc-latest-flat.rng"
         }
     ],
-    "xml.format.enabled": false,
-    "xml.validation.resolveExternalEntities": true,
-    "xml.validation.xInclude.enabled": true,
-    "xml.references": [
-        {
-            "pattern": "**/*.xml",
-            "expressions": [
-                {
-                    "from": "xref/@linkend",
-                    "to": "@xml:id"
-                },
-            ]
-        }
-    ],
-    "xml.codeLens.enabled": true,
+    // spellcheck settings
+    "cSpell.enabled": true,
     "cSpell.enabledLanguageIds": [
-        "xml"
+        "xml",
+        "asciidoc",
+        "markdown"
     ],
     "cSpell.caseSensitive": true,
     "cSpell.minWordLength": 3,
-    "cSpell.flagWords": [
-        "filesystem"
-    ],
     "cSpell.customDictionaries": {
         "SUSE custom": {
             "name": "SUSE custom dictionary",
@@ -57,6 +51,16 @@
         "/<(\n|.)*?>/g",
         "/<\/.*?>/g",
         "/&.*;/g",
-        "/<(screen|command|package|option|filename|systemitem).*?>(\n|.)*?</(\\1)>/g",
+        "/<(systemitem|screen|command|package|option|filename|systemitem|literal|guimenu|envar|remark).*?>(\n|.)*?</(\\1)>/g",
+        "/:[a-zA-Z_-]+:/",
+        "/----\n[\\S\\s]+?\n----/",
+        "/```\n[\\S\\s]+?\n```/"
     ],
+    "daps.openFileSplit": true,
+    "daps.autoSave": true,
+    "daps.verbosityLevel": 2,
+    "daps.XMLformatConfigFile": "~/.config/daps/docbook-xmlformat.conf",
+    "daps.runTerminal": true,
+    "daps.enableDbg": "both",
+    "daps.showXrefCodelens": "both",
 }
