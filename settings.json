@@ -27,11 +27,11 @@
     ],
     // spellcheck settings
     "cSpell.enabled": true,
-    "cSpell.enabledLanguageIds": [
-        "xml",
-        "asciidoc",
-        "markdown"
-    ],
+    "cSpell.enabledFileTypes": {
+        "asciidoc": true,
+        "markdown": true,
+        "xml": true,
+    },
     "cSpell.caseSensitive": true,
     "cSpell.minWordLength": 3,
     "cSpell.customDictionaries": {
