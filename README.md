@@ -18,6 +18,7 @@ You can use either Code or Codium according to your personal preference.
 * `CTRL+SHIFT+F` - Find or replace a string across all files in the workspace.
 * `CTRL+P` - Find a file.
 * `CTRL+SHIFT+P` - Run VSCode command. You can assign shortcuts to any command.
+* `CTRL+R` - Open recent workspaces.
 
 ## Extensions
 
@@ -132,12 +133,12 @@ Following are useful settings. Consider adding them to `settings.json`:
 "cSpell.enabled": true,
 "cSpell.caseSensitive": true,
 "cSpell.minWordLength": 3,
-"cSpell.showAutocompleteSuggestions": true,
-"cSpell.enabledLanguageIds": [
-    "xml",
-    "asciidoc",
-    "markdown"
-],
+"cSpell.enabledFileTypes": {
+    "*": false,
+    "xml": true,
+    "markdown": true,
+    "asciidoc": true
+},
 ```
 
 ### cSpell: custom dictionaries
