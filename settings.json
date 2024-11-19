@@ -28,9 +28,10 @@
     // spellcheck settings
     "cSpell.enabled": true,
     "cSpell.enabledFileTypes": {
-        "asciidoc": true,
-        "markdown": true,
-        "xml": true,
+    "*": false,
+    "xml": true,
+    "markdown": true,
+    "asciidoc": true
     },
     "cSpell.caseSensitive": true,
     "cSpell.minWordLength": 3,
