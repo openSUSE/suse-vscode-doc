@@ -23,3 +23,7 @@ Since vscode-daps 0.7.21, the codelens feature is disabled by default. To enable
 it, open the `Settingss` application by pressing `CTRL+,`and search for `daps
 codelens`. Specify `both` as the value to the `Show Assembly Codelens` and `Show
 Xref Codelens` options.
+
+TIP: DAPS codelens are now activated on the 'save' event instead of any editor
+'change' to speed VSCode up. Therefore, you need to save the active editor with
+`CTRL+S` to update the codelens links.
