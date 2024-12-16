@@ -20,7 +20,7 @@ To change VSCode configuration, you have two options:
 ## I can no longer see `Peek into` and `Open in a new tab` links above references to sections and modules, why?
 
 Since vscode-daps 0.7.21, the codelens feature is disabled by default. To enable
-it, open the `Settingss` application by pressing `CTRL+,`and search for `daps
+it, open the `Settings` application by pressing `CTRL+,`and search for `daps
 codelens`. Specify `both` as the value to the `Show Assembly Codelens` and `Show
 Xref Codelens` options.
 
