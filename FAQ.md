@@ -37,8 +37,28 @@ be highlighted throughout the document.
 ![Highlighted string](images/highlighted_strings.png)
 
 1. Press `CTRL+F2` or left-click the highlighted string and select
-`Change All Occurrences`. All the string occurrences get selected and a blinking cursor
-appears next to all of the matching strings.
+`Change All Occurrences`. All string occurrences get selected and a blinking cursor
+appears next to all matching strings.
 
 1. Start typing or paste the replacement string. All the matched strings get erased and replaced with the new content.
-<video controls src="images/strings_replacement.mp4" title="Strings replacement"></video>
+<video controls src="https://github.com/openSUSE/suse-vscode-doc/blob/main/images/strings_replacement.mp4" title="Strings replacement"></video>
+
+## How do I cherry-pick in VSCode?
+
+NOTE: To preform a user-friendly git cherry-pick from one git branch to another
+using VSCode, you must have the GitLens extension installed.
+
+1. In the left panel, switch to the `Source Control` view by clicking the
+   corresponding icon or pressing the `CTRL+SHIFT+G G` combo.
+   ![Source Control view](images/source_control.png)
+
+1. Unfold the `GITLENS` tab from the accordion in the left panel and activate
+   the `branches` view.
+   ![Branches view](images/branches_view.png)
+
+1. Select and unfold the branch whose commit you want to cherry-pick to the current branch.
+
+1. Right-click the commit message you want to cherry-pick and select `Cherry Pick Commit`.
+
+1. From the top center drop-down list, select the action you want to perform.
+   ![alt text](images/cherrypick_action.png)
