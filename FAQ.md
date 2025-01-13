@@ -1,3 +1,5 @@
+# Editor and extensions configuration
+
 ## How do I change VSCode configuration?
 
 To change VSCode configuration, you have two options:
@@ -24,6 +26,19 @@ TIP: DAPS codelens are now activated on the 'save' event instead of any editor
 'change' to speed VSCode up. Therefore, you need to save the active editor with
 `CTRL+S` to update the codelens links.
 
+## Images in the Docbook HTML preview are not shown, why?
+The Docbook preview screen is activated by the VSCode's `DAPS: Preview document`
+command. To view images correctly, you must specify the path to the directory
+where images are stored. The path must be relative to where the XML documents
+are located. For example, if all images are stored in the `images` subdirectory
+of a repository as in the case of https://github.com/SUSE/doc-modular, the
+following configuration in the `settings.json` file will solve the issue:
+```
+"daps.docPreviewImgPath": "../images/"
+```
+
+# Editing experience
+
 ## How do I replace multiple occurrences of a string at once?
 
 In VScode it is possible to replace multiple occurrences of a string
@@ -41,6 +56,8 @@ next to all matching strings.
 
 1. Start typing or paste the replacement string. All the matched strings get
 erased and replaced with the new content.
+
+# Git related
 
 ## How do I cherry-pick in VSCode?
 
@@ -65,4 +82,4 @@ Pick Commit`.
 
 1. From the top center drop-down list, select the action you want to perform.
 
-    ![cCherry pick actions](images/cherrypick_action.png)
+    ![Cherry pick actions](images/cherrypick_action.png)
