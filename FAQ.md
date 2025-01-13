@@ -4,7 +4,7 @@
 
 To change VSCode configuration, you have two options:
 
-1. Use the graphical `Settings` application application to configure VSCode
+1. Use the graphical `Settings` application to configure VSCode
 by specifying options in a user-friendly environment. To open the `Settings`
 application, press `CTRL+,`. The application offers descriptions of the options
 and default values. For example, to modify DAPS-related configuration,
