@@ -1,3 +1,5 @@
+NOTE: For new topics, file an [issue](https://github.com/openSUSE/suse-vscode-doc/issues/new/choose) in this repository.
+
 # Editor and extensions configuration
 
 ## How do I change VSCode configuration?
