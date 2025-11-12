@@ -35,9 +35,9 @@ then typing the initial letters of the extension name, such as `daps`
 
 
 ### Required extensions
-* DAPS - run `daps` commands from VSCode (requires `daps` package installed)
+* DAPSy - run `daps` commands from VSCode (requires `daps` package installed)
 * Vale VSCode - document style checker (requires `vale` package installed)
-* SUSE Vale rules - set of style checker rules that follow SUSE style guide
+* SUSE Valey rules - set of style checker rules that follow SUSE style guide
 * Code Spell Checker - spell checker
 
 ### DocBook required extensions
